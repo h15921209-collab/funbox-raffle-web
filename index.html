@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>全台戰鬥陀螺 抽選戰情室 | Funbox & 來玩聚</title>
+  
+  <!-- PWA Meta Tags -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0ea5e9">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="陀螺抽選">
+  <link rel="apple-touch-icon" href="https://files.catbox.moe/o8y77q.jpg">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              900: '#0c4a6e'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Custom scrollbars and animations */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #0f172a; }
+    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 9999px; }
+    .glass { background: rgba(15, 23, 42, 0.75); backdrop-filter: blur(12px); }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col font-sans antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- 頂部導航欄 (Top Navigation Bar) -->
+  <header class="sticky top-0 z-40 glass border-b border-slate-800/80">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <!-- Logo 與標題 -->
+      <div class="flex items-center space-x-3 cursor-pointer" onclick="switchTab('active')">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-600 to-indigo-500 flex items-center justify-center text-xl shadow-lg shadow-sky-500/20">
+          🌀
+        </div>
+        <div>
+          <div class="flex items-center space-x-2">
+            <h1 class="text-base sm:text-lg font-bold tracking-tight bg-gradient-to-r from-sky-400 via-indigo-300 to-purple-400 bg-clip-text text-transparent">
+              戰鬥陀螺 抽選戰情室
+            </h1>
+            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+              <span class="w-1.5 h-1.5 mr-1 bg-emerald-400 rounded-full animate-pulse"></span>
+              24/7 雲端巡邏
+            </span>
+          </div>
+          <p class="text-[11px] text-slate-400">Funbox & 來玩聚 全台限定抽選即時監控</p>
+        </div>
+      </div>
+
+      <!-- 右側動作按鈕 -->
+      <div class="flex items-center space-x-2">
+        <!-- 立即巡查按鈕 -->
+        <button id="btn-trigger-scan" onclick="triggerManualScan()" class="hidden sm:inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-medium bg-sky-500 hover:bg-sky-400 text-slate-950 transition active:scale-95 shadow-md shadow-sky-500/20">
+          <svg class="w-3.5 h-3.5 mr-1.5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          立即手動巡查
+        </button>
+        <!-- 齒輪設定按鈕 -->
+        <button onclick="openSettingsModal()" class="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition active:scale-95">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 手機版快速動作與更新時間列 -->
+  <div class="bg-slate-900/60 border-b border-slate-800/50 py-1.5 px-4">
+    <div class="max-w-6xl mx-auto flex items-center justify-between text-[11px] text-slate-400">
+      <div class="flex items-center space-x-2">
+        <span>🕒 最後更新：<span id="txt-last-updated" class="text-slate-300 font-mono">載入中...</span></span>
+      </div>
+      <div class="flex items-center space-x-3">
+        <span id="txt-active-filter" class="text-sky-400 font-medium">📍 高雄市 + 屏東縣</span>
+        <button onclick="triggerManualScan()" class="sm:hidden text-sky-400 hover:text-sky-300 font-medium flex items-center">
+          ⚡ 巡查
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 主分頁標籤導航 (Tabs Bar) -->
+  <div class="max-w-6xl mx-auto px-4 mt-4 w-full">
+    <div class="flex border-b border-slate-800 space-x-6 text-sm font-medium">
+      <button id="tab-btn-active" onclick="switchTab('active')" class="py-2.5 border-b-2 border-sky-500 text-sky-400 flex items-center space-x-2">
+        <span>🎯 即時開抽</span>
+        <span id="badge-active-count" class="px-2 py-0.2 rounded-full text-xs bg-sky-500/20 text-sky-300">0</span>
+      </button>
+      <button id="tab-btn-history" onclick="switchTab('history')" class="py-2.5 border-b-2 border-transparent text-slate-400 hover:text-slate-200 flex items-center space-x-2">
+        <span>📜 歷史紀錄</span>
+        <span id="badge-history-count" class="px-2 py-0.2 rounded-full text-xs bg-slate-800 text-slate-400">0</span>
+      </button>
+      <button id="tab-btn-stores" onclick="switchTab('stores')" class="py-2.5 border-b-2 border-transparent text-slate-400 hover:text-slate-200 flex items-center space-x-2">
+        <span>🏬 門市生活圈</span>
+        <span id="badge-store-count" class="px-2 py-0.2 rounded-full text-xs bg-slate-800 text-slate-400">0</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- 主內容容器 -->
+  <main class="max-w-6xl mx-auto px-4 py-6 flex-1 w-full">
+
+    <!-- 1. 即時開抽分頁 (Active Raffles View) -->
+    <section id="view-active">
+      <!-- 篩選列 -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
+        <!-- 生活圈快速標籤切換 -->
+        <div class="flex items-center space-x-1.5 overflow-x-auto pb-1 sm:pb-0 text-xs">
+          <button onclick="setFilterCity('all')" class="chip-filter px-3 py-1.5 rounded-lg bg-sky-500/10 text-sky-400 border border-sky-500/30 whitespace-nowrap active-chip">全部</button>
+          <button onclick="setFilterCity('kaohsiung_pingtung')" class="chip-filter px-3 py-1.5 rounded-lg bg-slate-900 text-slate-400 border border-slate-800 hover:text-white whitespace-nowrap">高雄+屏東</button>
+          <button onclick="setFilterCity('tainan')" class="chip-filter px-3 py-1.5 rounded-lg bg-slate-900 text-slate-400 border border-slate-800 hover:text-white whitespace-nowrap">台南</button>
+          <button onclick="setFilterCity('taichung')" class="chip-filter px-3 py-1.5 rounded-lg bg-slate-900 text-slate-400 border border-slate-800 hover:text-white whitespace-nowrap">台中</button>
+          <button onclick="setFilterCity('taipei')" class="chip-filter px-3 py-1.5 rounded-lg bg-slate-900 text-slate-400 border border-slate-800 hover:text-white whitespace-nowrap">雙北</button>
+        </div>
+
+        <!-- 搜尋欄 -->
+        <div class="relative w-full sm:w-64">
+          <input type="text" id="input-search" oninput="renderActiveEvents()" placeholder="搜尋商品或門市..." class="w-full bg-slate-900 border border-slate-800 rounded-xl px-3 py-1.5 pl-9 text-xs text-white focus:outline-none focus:border-sky-500 transition">
+          <svg class="w-4 h-4 text-slate-500 absolute left-3 top-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        </div>
+      </div>
+
+      <!-- 開抽卡片網格 (Grid) -->
+      <div id="grid-active-events" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- 動態渲染卡片 -->
+      </div>
+
+      <!-- 無資料佔位提示 -->
+      <div id="empty-active-state" class="hidden text-center py-16 bg-slate-900/40 rounded-2xl border border-dashed border-slate-800">
+        <div class="text-4xl mb-3">🛡️</div>
+        <h3 class="text-base font-semibold text-slate-200">目前暫無進行中的戰鬥陀螺抽選</h3>
+        <p class="text-xs text-slate-400 mt-1 max-w-sm mx-auto">雲端系統持續 24 小時每小時自動巡邏各店，一有新品或開抽公告，卡片與 LINE 將同步秒速送達！</p>
+        <button onclick="triggerManualScan()" class="mt-4 px-4 py-2 rounded-lg text-xs font-medium bg-slate-800 hover:bg-slate-700 text-sky-400 border border-slate-700 transition">
+          ⚡ 立即觸發雲端掃描
+        </button>
+      </div>
+    </section>
+
+    <!-- 2. 歷史紀錄分頁 (History View) -->
+    <section id="view-history" class="hidden">
+      <div class="mb-4">
+        <h2 class="text-base font-semibold text-white">過去開抽存檔紀錄</h2>
+        <p class="text-xs text-slate-400 mt-0.5">回顧已結束的戰鬥陀螺抽選與活動商品資料庫</p>
+      </div>
+
+      <div class="bg-slate-900/60 rounded-xl border border-slate-800 divide-y divide-slate-800/80 overflow-hidden" id="list-history-events">
+        <!-- 動態渲染歷史清單 -->
+      </div>
+    </section>
+
+    <!-- 3. 門市生活圈控制分頁 (Store Manager View) -->
+    <section id="view-stores" class="hidden">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
+        <div>
+          <h2 class="text-base font-semibold text-white">全台門市監控控制台</h2>
+          <p class="text-xs text-slate-400 mt-0.5">共收錄全台 73 家實體門市（Funbox 69 家 ＋ 來玩聚 4 家）</p>
+        </div>
+
+        <div class="flex items-center space-x-2">
+          <button onclick="saveStoreSettingsToCloud()" class="px-4 py-2 rounded-lg text-xs font-semibold bg-sky-500 hover:bg-sky-400 text-slate-950 shadow-md shadow-sky-500/20 active:scale-95 transition">
+            💾 儲存生活圈設定至雲端
+          </button>
+        </div>
+      </div>
+
+      <!-- 快速生活圈套用卡片 -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
+        <div onclick="quickApplyPreset(['高雄市', '屏東縣'])" class="cursor-pointer p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-sky-500/50 transition">
+          <div class="text-sm font-bold text-sky-400">⚡ 高雄 ＋ 屏東</div>
+          <div class="text-[11px] text-slate-400 mt-1">涵蓋夢時代、巨蛋、鳳山來玩聚等 14 間</div>
+        </div>
+        <div onclick="quickApplyPreset(['高雄市'])" class="cursor-pointer p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-sky-500/50 transition">
+          <div class="text-sm font-bold text-sky-400">🎯 僅看高雄市</div>
+          <div class="text-[11px] text-slate-400 mt-1">涵蓋高雄 12 間實體門市</div>
+        </div>
+        <div onclick="quickApplyPreset(['台南市', '高雄市'])" class="cursor-pointer p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-sky-500/50 transition">
+          <div class="text-sm font-bold text-sky-400">🏙️ 台南 ＋ 高雄</div>
+          <div class="text-[11px] text-slate-400 mt-1">南部跨生活圈核心 16 間</div>
+        </div>
+        <div onclick="quickApplyPreset(['全台'])" class="cursor-pointer p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-sky-500/50 transition">
+          <div class="text-sm font-bold text-sky-400">🌏 全台門市全開</div>
+          <div class="text-[11px] text-slate-400 mt-1">全台 73 家門市全面巡檢</div>
+        </div>
+      </div>
+
+      <!-- 門市清單與開關列表 -->
+      <div class="bg-slate-900/40 rounded-xl border border-slate-800 p-4">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-xs font-semibold text-slate-300 uppercase tracking-wider">實體門市即時開關狀態</h3>
+          <span id="txt-monitored-summary" class="text-xs text-sky-400 font-medium">載入中...</span>
+        </div>
+        <div id="container-store-toggles" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          <!-- 動態門市列表 -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 設定控制彈窗 (Settings Modal) -->
+  <div id="modal-settings" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-md w-full p-6 shadow-2xl relative">
+      <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center space-x-2.5">
+          <div class="w-8 h-8 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center text-lg">⚙️</div>
+          <h3 class="text-base font-bold text-white">管理控制台設定</h3>
+        </div>
+        <button onclick="closeSettingsModal()" class="text-slate-400 hover:text-white p-1">✕</button>
+      </div>
+
+      <div class="space-y-4 text-xs">
+        <div>
+          <label class="block text-slate-300 font-medium mb-1">GitHub Personal Access Token (PAT)</label>
+          <input type="password" id="input-github-token" placeholder="貼上個人管理 Token (選填)..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-white font-mono focus:outline-none focus:border-sky-500 transition">
+          <p class="text-[11px] text-slate-500 mt-1">安全保存在您個人的手機瀏覽器（localStorage），用於儲存生活圈與觸發雲端巡查。</p>
+        </div>
+
+        <div class="bg-slate-950/80 p-3 rounded-xl border border-slate-800/80 space-y-2">
+          <div class="flex justify-between text-slate-400">
+            <span>倉庫名稱：</span>
+            <span class="text-slate-200 font-mono">h15921209-collab/funbox-raffle-monitor</span>
+          </div>
+          <div class="flex justify-between text-slate-400">
+            <span>連線狀態：</span>
+            <span id="txt-conn-status" class="text-emerald-400 font-medium">● 雲端流水線就緒</span>
+          </div>
+        </div>
+
+        <div class="pt-2 flex space-x-3">
+          <button onclick="saveSettingsToken()" class="flex-1 py-2.5 rounded-xl font-semibold bg-sky-500 hover:bg-sky-400 text-slate-950 transition active:scale-95">
+            儲存金鑰
+          </button>
+          <button onclick="triggerManualScan()" class="px-4 py-2.5 rounded-xl font-semibold bg-slate-800 hover:bg-slate-700 text-sky-400 border border-slate-700 transition active:scale-95">
+            ⚡ 觸發雲端掃描
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 吐司通知提示 (Toast Container) -->
+  <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 px-4 py-2.5 rounded-xl text-xs font-semibold shadow-xl transition-all duration-300 opacity-0 pointer-events-none translate-y-3"></div>
+
+  <!-- PWA Service Worker 註冊與前端資料交互邏輯 -->
+  <script>
+    let appData = {
+      last_updated: '',
+      preferences: { cities: ['高雄市', '屏東縣'] },
+      active_events: [],
+      history_events: [],
+      all_stores: []
+    };
+
+    let activeFilterCity = 'all';
+
+    // 初始化載入
+    document.addEventListener('DOMContentLoaded', () => {
+      loadTokenFromStorage();
+      fetchDashboardData();
+      registerServiceWorker();
+    });
+
+    // 取得即時資料
+    async function fetchDashboardData() {
+      try {
+        const res = await fetch('data.json?t=' + Date.now());
+        if (res.ok) {
+          appData = await res.json();
+          renderUI();
+        } else {
+          showToast('⚠️ 讀取雲端資料失敗，請確認網路連線。', 'error');
+        }
+      } catch (e) {
+        console.error('Fetch error:', e);
+      }
+    }
+
+    // 渲染整體介面
+    function renderUI() {
+      // 1. 頂部資訊
+      document.getElementById('txt-last-updated').innerText = appData.last_updated || '剛剛';
+      
+      const cities = appData.preferences.cities || [];
+      const cityDesc = (cities.length === 0 || cities.includes('全台')) ? '全台門市' : cities.join(' + ');
+      document.getElementById('txt-active-filter').innerText = '📍 ' + cityDesc;
+
+      // 2. 徽章計數
+      document.getElementById('badge-active-count').innerText = appData.active_events.length;
+      document.getElementById('badge-history-count').innerText = appData.history_events.length;
+      document.getElementById('badge-store-count').innerText = appData.all_stores.length;
+
+      // 3. 渲染子分頁
+      renderActiveEvents();
+      renderHistoryEvents();
+      renderStoreToggles();
+    }
+
+    // 渲染即時抽獎卡片
+    function renderActiveEvents() {
+      const grid = document.getElementById('grid-active-events');
+      const emptyState = document.getElementById('empty-active-state');
+      const query = (document.getElementById('input-search').value || '').trim().toLowerCase();
+
+      let filtered = appData.active_events || [];
+
+      // 依城市標籤過濾
+      if (activeFilterCity === 'kaohsiung_pingtung') {
+        filtered = filtered.filter(e => ['高雄市', '屏東縣'].includes(e.city));
+      } else if (activeFilterCity === 'tainan') {
+        filtered = filtered.filter(e => e.city === '台南市');
+      } else if (activeFilterCity === 'taichung') {
+        filtered = filtered.filter(e => e.city === '台中市');
+      } else if (activeFilterCity === 'taipei') {
+        filtered = filtered.filter(e => ['台北市', '新北市'].includes(e.city));
+      }
+
+      // 搜尋關鍵字
+      if (query) {
+        filtered = filtered.filter(e => 
+          (e.store_name && e.store_name.toLowerCase().includes(query)) ||
+          (e.product_title && e.product_title.toLowerCase().includes(query)) ||
+          (e.city && e.city.toLowerCase().includes(query))
+        );
+      }
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '';
+        emptyState.classList.remove('hidden');
+        return;
+      }
+
+      emptyState.classList.add('hidden');
+      grid.innerHTML = filtered.map(item => {
+        const isPlayTogether = item.brand === 'play_together';
+        const brandBadge = isPlayTogether
+          ? `<span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-amber-500/10 text-amber-400 border border-amber-500/20">來玩聚 Play Together</span>`
+          : `<span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-sky-500/10 text-sky-400 border border-sky-500/20">Funbox 麗嬰國際</span>`;
+
+        const statusBadge = `<span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">${item.status_display || '🟢 進行中'}</span>`;
+
+        const lineActionBtn = item.line_url
+          ? `<a href="${item.line_url}" target="_blank" class="flex-1 py-2 text-center rounded-xl font-semibold bg-emerald-600 hover:bg-emerald-500 text-white text-xs transition shadow-md shadow-emerald-600/20 active:scale-95">📲 一鍵 LINE 登記</a>`
+          : (item.direct_links && item.direct_links.length > 0)
+            ? `<a href="${item.direct_links[0]}" target="_blank" class="flex-1 py-2 text-center rounded-xl font-semibold bg-emerald-600 hover:bg-emerald-500 text-white text-xs transition shadow-md shadow-emerald-600/20 active:scale-95">📲 前往登記抽獎</a>`
+            : `<button disabled class="flex-1 py-2 text-center rounded-xl font-semibold bg-slate-800 text-slate-500 text-xs cursor-not-allowed">依門市公告登記</button>`;
+
+        const fbBtn = item.fb_url
+          ? `<a href="${item.fb_url}" target="_blank" class="px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700 text-xs transition active:scale-95">📱 粉專</a>`
+          : '';
+
+        return `
+          <div class="bg-slate-900/80 rounded-2xl border border-slate-800 hover:border-slate-700 p-5 shadow-lg flex flex-col justify-between transition hover:-translate-y-1">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                ${brandBadge}
+                ${statusBadge}
+              </div>
+
+              <h3 class="text-base font-bold text-white leading-snug tracking-tight mb-2">
+                ${item.product_title || '戰鬥陀螺限定抽籤活動'}
+              </h3>
+
+              <div class="space-y-1.5 text-xs text-slate-400 mb-4">
+                <div class="flex items-center space-x-1.5">
+                  <span class="text-slate-500">🏬 門市：</span>
+                  <span class="text-slate-200 font-medium">${item.store_name} (${item.city})</span>
+                </div>
+                <div class="flex items-center space-x-1.5">
+                  <span class="text-slate-500">⏳ 期間：</span>
+                  <span class="text-sky-400 font-medium">${item.period || '依門市貼文公告'}</span>
+                </div>
+                ${item.line_account ? `
+                <div class="flex items-center space-x-1.5">
+                  <span class="text-slate-500">💬 LINE：</span>
+                  <span class="text-slate-300 font-mono">${item.line_account}</span>
+                </div>` : ''}
+              </div>
+            </div>
+
+            <div class="flex items-center space-x-2 pt-3 border-t border-slate-800/80">
+              ${lineActionBtn}
+              ${fbBtn}
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // 渲染歷史存檔清單
+    function renderHistoryEvents() {
+      const list = document.getElementById('list-history-events');
+      const items = appData.history_events || [];
+
+      if (items.length === 0) {
+        list.innerHTML = `<div class="p-8 text-center text-xs text-slate-500">尚無歷史紀錄</div>`;
+        return;
+      }
+
+      list.innerHTML = items.map(item => `
+        <div class="p-4 flex items-center justify-between hover:bg-slate-800/30 transition text-xs">
+          <div class="space-y-1">
+            <div class="font-semibold text-slate-200">${item.title || '戰鬥陀螺抽籤活動'}</div>
+            <div class="text-slate-400">${item.store_name}</div>
+          </div>
+          <div class="text-right text-slate-500 text-[11px] font-mono">
+            ${item.first_seen || ''}
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // 渲染門市開關清單
+    function renderStoreToggles() {
+      const container = document.getElementById('container-store-toggles');
+      const stores = appData.all_stores || [];
+      const currentCities = appData.preferences.cities || [];
+
+      document.getElementById('txt-monitored-summary').innerText = 
+        `已鎖定生活圈：${currentCities.includes('全台') ? '全台' : currentCities.join(', ')}`;
+
+      container.innerHTML = stores.map(s => {
+        const isMonitored = currentCities.includes('全台') || currentCities.includes(s.city);
+        const brandBadge = s.brand === 'play_together' ? '【來玩聚】' : '【Funbox】';
+
+        return `
+          <div class="p-2.5 rounded-lg bg-slate-900 border ${isMonitored ? 'border-sky-500/30 bg-sky-950/10' : 'border-slate-800'} flex items-center justify-between text-xs">
+            <div class="truncate mr-2">
+              <span class="font-medium text-slate-200">${brandBadge} ${s.name}</span>
+              <div class="text-[11px] text-slate-500">${s.city}</div>
+            </div>
+            <span class="px-2 py-0.5 rounded text-[10px] font-semibold ${isMonitored ? 'bg-sky-500/20 text-sky-400' : 'bg-slate-800 text-slate-500'}">
+              ${isMonitored ? '監控中' : '略過'}
+            </span>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // 分頁切換
+    function switchTab(tab) {
+      document.getElementById('view-active').classList.toggle('hidden', tab !== 'active');
+      document.getElementById('view-history').classList.toggle('hidden', tab !== 'history');
+      document.getElementById('view-stores').classList.toggle('hidden', tab !== 'stores');
+
+      ['active', 'history', 'stores'].forEach(t => {
+        const btn = document.getElementById(`tab-btn-${t}`);
+        if (t === tab) {
+          btn.className = 'py-2.5 border-b-2 border-sky-500 text-sky-400 flex items-center space-x-2 font-semibold';
+        } else {
+          btn.className = 'py-2.5 border-b-2 border-transparent text-slate-400 hover:text-slate-200 flex items-center space-x-2 font-medium';
+        }
+      });
+    }
+
+    // 城市標籤篩選
+    function setFilterCity(cityKey) {
+      activeFilterCity = cityKey;
+      document.querySelectorAll('.chip-filter').forEach(chip => {
+        chip.className = 'chip-filter px-3 py-1.5 rounded-lg bg-slate-900 text-slate-400 border border-slate-800 hover:text-white whitespace-nowrap text-xs';
+      });
+      event.target.className = 'chip-filter px-3 py-1.5 rounded-lg bg-sky-500/10 text-sky-400 border border-sky-500/30 whitespace-nowrap text-xs font-semibold';
+      renderActiveEvents();
+    }
+
+    // 快速套用生活圈預設
+    function quickApplyPreset(cities) {
+      appData.preferences.cities = cities;
+      renderUI();
+      showToast(`已選取【${cities.join('+')}】！請點擊右上角「儲存設定」按鈕生效。`, 'info');
+    }
+
+    // 儲存設定至 GitHub 雲端倉庫
+    async function saveStoreSettingsToCloud() {
+      const token = localStorage.getItem('GITHUB_PAT') || '';
+      if (!token) {
+        openSettingsModal();
+        showToast('請先填寫 GitHub Token 以儲存設定', 'error');
+        return;
+      }
+
+      showToast('⏳ 正在同步更新生活圈設定至 GitHub...', 'info');
+
+      const owner = 'h15921209-collab';
+      const repo = 'funbox-raffle-monitor';
+      const filePath = 'user_preferences.json';
+      const url = `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`;
+
+      try {
+        // 1. Get SHA
+        const getRes = await fetch(url, {
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Accept': 'application/vnd.github+json'
+          }
+        });
+        let sha = '';
+        if (getRes.ok) {
+          const getJson = await getRes.json();
+          sha = getJson.sha;
+        }
+
+        // 2. Put Content
+        const newPref = {
+          cities: appData.preferences.cities,
+          keywords: [],
+          include_official_hq: true,
+          updated_at: new Date().toISOString()
+        };
+        const contentStr = JSON.stringify(newPref, null, 2);
+        const b64 = btoa(unescape(encodeURIComponent(contentStr)));
+
+        const putRes = await fetch(url, {
+          method: 'PUT',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Accept': 'application/vnd.github+json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            message: `feat: update target cities to ${newPref.cities.join(', ')} via Web App`,
+            content: b64,
+            sha: sha || undefined
+          })
+        });
+
+        if (putRes.ok) {
+          showToast('✅ 成功更新生活圈設定！雲端巡檢已即時同步生效。', 'success');
+        } else {
+          showToast('❌ 儲存失敗，請檢查 Token 權限。', 'error');
+        }
+      } catch (err) {
+        showToast('❌ 網路異常，儲存失敗。', 'error');
+      }
+    }
+
+    // 立即觸發雲端掃描
+    async function triggerManualScan() {
+      const token = localStorage.getItem('GITHUB_PAT') || '';
+      if (!token) {
+        openSettingsModal();
+        showToast('請先填寫 GitHub Token 以觸發雲端巡查', 'error');
+        return;
+      }
+
+      showToast('⚡ 正在呼叫 GitHub Actions 啟動全台即時掃描...', 'info');
+      const owner = 'h15921209-collab';
+      const repo = 'funbox-raffle-monitor';
+      const url = `https://api.github.com/repos/${owner}/${repo}/actions/workflows/monitor.yml/dispatches`;
+
+      try {
+        const res = await fetch(url, {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Accept': 'application/vnd.github+json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ ref: 'main' })
+        });
+
+        if (res.status === 204) {
+          showToast('🎉 GitHub Actions 雲端巡查已正式啟動！約 30 秒後完成。', 'success');
+          setTimeout(() => fetchDashboardData(), 15000);
+        } else {
+          showToast('❌ 觸發失敗: HTTP ' + res.status, 'error');
+        }
+      } catch (e) {
+        showToast('❌ 觸發失敗，請確認網路連線。', 'error');
+      }
+    }
+
+    // 設定 Modal 管理
+    function openSettingsModal() {
+      document.getElementById('input-github-token').value = localStorage.getItem('GITHUB_PAT') || '';
+      document.getElementById('modal-settings').classList.remove('hidden');
+    }
+
+    function closeSettingsModal() {
+      document.getElementById('modal-settings').classList.add('hidden');
+    }
+
+    function saveSettingsToken() {
+      const token = document.getElementById('input-github-token').value.trim();
+      if (token) {
+        localStorage.setItem('GITHUB_PAT', token);
+        showToast('✅ 金鑰已安全儲存於本機瀏覽器！', 'success');
+      } else {
+        localStorage.removeItem('GITHUB_PAT');
+        showToast('已清除金鑰', 'info');
+      }
+      closeSettingsModal();
+    }
+
+    function loadTokenFromStorage() {
+      // Token is maintained locally in user's browser localStorage
+    }
+
+    // 吐司通知
+    function showToast(text, type = 'info') {
+      const toast = document.getElementById('toast');
+      toast.innerText = text;
+      toast.className = `fixed bottom-6 left-1/2 -translate-x-1/2 z-50 px-4 py-2.5 rounded-xl text-xs font-semibold shadow-xl transition-all duration-300 pointer-events-none opacity-100 translate-y-0 ${
+        type === 'success' ? 'bg-emerald-500 text-slate-950 shadow-emerald-500/20' :
+        type === 'error' ? 'bg-rose-500 text-white shadow-rose-500/20' :
+        'bg-sky-500 text-slate-950 shadow-sky-500/20'
+      }`;
+      setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', 'translate-y-3');
+      }, 3500);
+    }
+
+    // 註冊 PWA Service Worker
+    function registerServiceWorker() {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js').catch(err => {
+          console.log('SW registration skipped:', err);
+        });
+      }
+    }
+  </script>
+</body>
+</html>
