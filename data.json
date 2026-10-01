@@ -1,0 +1,763 @@
+{
+  "last_updated": "2026-10-01 23:31:52",
+  "preferences": {
+    "cities": [
+      "高雄市",
+      "屏東縣"
+    ],
+    "keywords": [],
+    "include_official_hq": true,
+    "updated_at": "2026-10-01T23:05:00+08:00"
+  },
+  "active_events": [],
+  "history_events": [
+    {
+      "post_id": "seen_posts",
+      "store_name": "",
+      "title": "",
+      "links": [],
+      "first_seen": ""
+    }
+  ],
+  "all_stores": [
+    {
+      "store_id": "official_hq",
+      "name": "Funbox Toys 官方總部",
+      "brand": "funbox",
+      "region": "all",
+      "city": "全國",
+      "fb_url": "https://www.facebook.com/FunboxToys",
+      "line_id": "",
+      "enabled": true
+    },
+    {
+      "store_id": "pt_official",
+      "name": "來玩聚 Play Together 總專頁",
+      "brand": "play_together",
+      "region": "all",
+      "city": "全國",
+      "fb_url": "https://www.facebook.com/playtogether.tw",
+      "line_id": "",
+      "enabled": true
+    },
+    {
+      "store_id": "pt_fengshan",
+      "name": "來玩聚 鳳山店",
+      "brand": "play_together",
+      "region": "south",
+      "city": "高雄市",
+      "fb_url": "https://www.facebook.com/people/%E9%B3%B3%E5%B1%B1%E4%BE%86%E7%8E%A9%E8%81%9A/100063990924403/",
+      "address": "高雄市鳳山區五甲一路899號2樓 (萬家福2F)",
+      "line_id": "",
+      "enabled": true
+    },
+    {
+      "store_id": "pt_nanzi",
+      "name": "來玩聚 楠梓店",
+      "brand": "play_together",
+      "region": "south",
+      "city": "高雄市",
+      "fb_url": "https://www.facebook.com/122101070067425242",
+      "address": "高雄市楠梓區",
+      "line_id": "",
+      "enabled": true
+    },
+    {
+      "store_id": "pt_taipei",
+      "name": "來玩聚 台北地下街店",
+      "brand": "play_together",
+      "region": "north",
+      "city": "台北市",
+      "fb_url": "https://www.facebook.com/122101999431421665",
+      "address": "台北市中正區市民大道一段100號B1 (Y16店鋪)",
+      "line_id": "",
+      "enabled": true
+    },
+    {
+      "store_id": "store_01",
+      "name": "Funbox 台北忠孝遠東SOGO",
+      "brand": "funbox",
+      "region": "north",
+      "city": "台北市",
+      "fb_url": "https://www.facebook.com/funboxsogo",
+      "line_id": "@lcn7452p",
+      "enabled": true
+    },
+    {
+      "store_id": "store_02",
+      "name": "Funbox 三越南西",
+      "brand": "funbox",
+      "region": "north",
+      "city": "台北市",
+      "fb_url": "https://www.facebook.com/share/1BuSqwADRT/",
+      "line_id": "@626iceit",
+      "enabled": true
+    },
+    {
+      "store_id": "store_03",
+      "name": "Funbox 三越站前",
+      "brand": "funbox",
+      "region": "north",
+      "city": "台北市",
+      "fb_url": "https://www.facebook.com/profile.php?id=61593176934292",
+      "line_id": "@631ovgxp",
+      "enabled": true
+    },
+    {
+      "store_id": "store_04",
+      "name": "Funbox 天母SOGO",
+      "brand": "funbox",
+      "region": "north",
+      "city": "台北市",
+      "fb_url": "https://www.facebook.com/profile.php?id=61592597564673",
+      "line_id": "@377cbfue",
+      "enabled": true
+    },
+    {
+      "store_id": "store_05",
+      "name": "Funbox 高島屋百貨",
+      "brand": "funbox",
+      "region": "north",
+      "city": "台北市",
+      "fb_url": "",
+      "line_id": "",
+      "enabled": false
+    },
+    {
+      "store_id": "store_06",
+      "name": "Funbox 比漾廣場",
+      "brand": "funbox",
+      "region": "north",
+      "city": "新北市",
+      "fb_url": "https://www.facebook.com/profile.php?id=61592677934745",
+      "line_id": "@ufq5307a",
+      "enabled": true
+    },
+    {
+      "store_id": "store_07",
+      "name": "Funbox 桃園站前",
+      "brand": "funbox",
+      "region": "north",
+      "city": "桃園市",
+      "fb_url": "https://www.facebook.com/profile.php?id=100064059014450#",
+      "line_id": "@fcm1241y",
+      "enabled": true
+    },
+    {
+      "store_id": "store_08",
+      "name": "Funbox 桃園遠東",
+      "brand": "funbox",
+      "region": "north",
+      "city": "桃園市",
+      "fb_url": "https://www.facebook.com/profile.php?id=100064240476385",
+      "line_id": "@bix0595a",
+      "enabled": true
+    },
+    {
+      "store_id": "store_09",
+      "name": "Funbox 信義新天地A8館",
+      "brand": "funbox",
+      "region": "north",
+      "city": "台北市",
+      "fb_url": "https://www.facebook.com/profile.php?id=61593106704912&locale=zh_TW",
+      "line_id": "@983dfazy",
+      "enabled": true
+    },
+    {
+      "store_id": "store_10",
+      "name": "Funbox 新竹遠東",
+      "brand": "funbox",
+      "region": "north",
+      "city": "新竹縣市",
+      "fb_url": "https://www.facebook.com/profile.php?id=61591842121755",
+      "line_id": "@822rfnmr",
+      "enabled": true
+    },
+    {
+      "store_id": "store_11",
+      "name": "Funbox 中壢SOGO",
+      "brand": "funbox",
+      "region": "north",
+      "city": "桃園市",
+      "fb_url": "https://www.facebook.com/profile.php?id=61558958859748",
+      "line_id": "@xcs3672w",
+      "enabled": true
+    },
+    {
+      "store_id": "store_12",
+      "name": "Funbox 板橋遠東",
+      "brand": "funbox",
+      "region": "north",
+      "city": "新北市",
+      "fb_url": "https://www.facebook.com/share/1BmnHxAaZ7/?mibextid=wwXIfr",
+      "line_id": "@083zoknr",
+      "enabled": true
+    },
+    {
+      "store_id": "store_13",
+      "name": "Funbox 中和環球",
+      "brand": "funbox",
+      "region": "north",
+      "city": "新北市",
+      "fb_url": "https://www.facebook.com/profile.php?id=61575325211390&locale=zh_TW",
+      "line_id": "@zgq9395a",
+      "enabled": true
+    },
+    {
+      "store_id": "store_14",
+      "name": "Funbox 板橋大遠百",
+      "brand": "funbox",
+      "region": "north",
+      "city": "新北市",
+      "fb_url": "https://www.facebook.com/profile.php?id=61584956488867",
+      "line_id": "@585clqqg",
+      "enabled": true
+    },
+    {
+      "store_id": "store_15",
+      "name": "Funbox 新竹巨城",
+      "brand": "funbox",
+      "region": "north",
+      "city": "新竹縣市",
+      "fb_url": "https://www.facebook.com/share/1D2TZJ7pr3/?mibextid=wwXIfr",
+      "line_id": "@532otwmb",
+      "enabled": true
+    },
+    {
+      "store_id": "store_16",
+      "name": "Funbox 美麗華",
+      "brand": "funbox",
+      "region": "north",
+      "city": "台北市",
+      "fb_url": "https://www.facebook.com/profile.php?id=61592730395195",
+      "line_id": "@660hextn",
+      "enabled": true
+    },
+    {
+      "store_id": "store_17",
+      "name": "Funbox 中壢大江",
+      "brand": "funbox",
+      "region": "north",
+      "city": "桃園市",
+      "fb_url": "https://www.facebook.com/profile.php?id=100063657227053",
+      "line_id": "@099ldnvw",
+      "enabled": true
+    },
+    {
+      "store_id": "store_18",
+      "name": "Funbox 新月廣場",
+      "brand": "funbox",
+      "region": "east",
+      "city": "宜蘭縣",
+      "fb_url": "https://www.facebook.com/funboxtoyluna/",
+      "line_id": "@027iendl",
+      "enabled": true
+    },
+    {
+      "store_id": "store_19",
+      "name": "Funbox 潤泰南港車站店",
+      "brand": "funbox",
+      "region": "north",
+      "city": "台北市",
+      "fb_url": "https://www.facebook.com/profile.php?id=61592736394851",
+      "line_id": "@924tguor",
+      "enabled": true
+    },
+    {
+      "store_id": "store_20",
+      "name": "Funbox 苗栗尚順",
+      "brand": "funbox",
+      "region": "central",
+      "city": "苗栗縣",
+      "fb_url": "https://www.facebook.com/share/1DZmr5Njyk/?mibextid=wwXIfr",
+      "line_id": "@185vowmo",
+      "enabled": true
+    },
+    {
+      "store_id": "store_21",
+      "name": "Funbox 汐科遠雄",
+      "brand": "funbox",
+      "region": "north",
+      "city": "新北市",
+      "fb_url": "https://www.facebook.com/profile.php?id=61592991209842",
+      "line_id": "@mhb3876c",
+      "enabled": true
+    },
+    {
+      "store_id": "store_22",
+      "name": "Funbox 桃園環球A8",
+      "brand": "funbox",
+      "region": "north",
+      "city": "桃園市",
+      "fb_url": "https://www.facebook.com/profile.php?id=61591728303067",
+      "line_id": "@lae4656h",
+      "enabled": true
+    },
+    {
+      "store_id": "store_23",
+      "name": "Funbox 新竹遠雄湳雅",
+      "brand": "funbox",
+      "region": "north",
+      "city": "新竹縣市",
+      "fb_url": "https://www.facebook.com/profile.php?id=61592712696197",
+      "line_id": "@agl4214l",
+      "enabled": true
+    },
+    {
+      "store_id": "store_24",
+      "name": "Funbox 樹林秀泰",
+      "brand": "funbox",
+      "region": "north",
+      "city": "新北市",
+      "fb_url": "https://www.facebook.com/profile.php?id=61591486063647",
+      "line_id": "@046txnme",
+      "enabled": true
+    },
+    {
+      "store_id": "store_25",
+      "name": "Funbox 淡水禮萊廣場",
+      "brand": "funbox",
+      "region": "north",
+      "city": "新北市",
+      "fb_url": "https://www.facebook.com/share/1Db8rVD6Hk/?mibextid=wwXIfr",
+      "line_id": "@944creff",
+      "enabled": true
+    },
+    {
+      "store_id": "store_26",
+      "name": "Funbox 天母三越",
+      "brand": "funbox",
+      "region": "north",
+      "city": "台北市",
+      "fb_url": "https://www.facebook.com/share/1K6XRBMujq/",
+      "line_id": "@237annfd",
+      "enabled": true
+    },
+    {
+      "store_id": "store_27",
+      "name": "Funbox 遠百信義A13",
+      "brand": "funbox",
+      "region": "north",
+      "city": "台北市",
+      "fb_url": "https://www.facebook.com/profile.php?id=61551944767554",
+      "line_id": "@020sqlyp",
+      "enabled": true
+    },
+    {
+      "store_id": "store_28",
+      "name": "Funbox 台茂購物中心",
+      "brand": "funbox",
+      "region": "north",
+      "city": "桃園市",
+      "fb_url": "https://www.facebook.com/profile.php?id=61590975990981&locale=zh_TW",
+      "line_id": "@504tdsbb",
+      "enabled": true
+    },
+    {
+      "store_id": "store_29",
+      "name": "Funbox 宏匯廣場",
+      "brand": "funbox",
+      "region": "north",
+      "city": "新北市",
+      "fb_url": "",
+      "line_id": "",
+      "enabled": false
+    },
+    {
+      "store_id": "store_30",
+      "name": "Funbox 桃園環球A19",
+      "brand": "funbox",
+      "region": "north",
+      "city": "桃園市",
+      "fb_url": "https://www.facebook.com/profile.php?id=100083960592067",
+      "line_id": "@403qwxdn",
+      "enabled": true
+    },
+    {
+      "store_id": "store_31",
+      "name": "Funbox 竹北遠東",
+      "brand": "funbox",
+      "region": "north",
+      "city": "新竹縣市",
+      "fb_url": "https://www.facebook.com/ZhubeiFunbox/?locale=zh_TW",
+      "line_id": "@642vdyvq",
+      "enabled": true
+    },
+    {
+      "store_id": "store_32",
+      "name": "Funbox 新竹享平方",
+      "brand": "funbox",
+      "region": "north",
+      "city": "新竹縣市",
+      "fb_url": "https://www.facebook.com/share/193j7smii9/?mibextid=wwXIfr",
+      "line_id": "@062qoqex",
+      "enabled": true
+    },
+    {
+      "store_id": "store_33",
+      "name": "Funbox 新店裕隆城",
+      "brand": "funbox",
+      "region": "north",
+      "city": "新北市",
+      "fb_url": "https://www.facebook.com/share/19E9UZWhK9/?mibextid=wwXIfr",
+      "line_id": "@491uicsm",
+      "enabled": true
+    },
+    {
+      "store_id": "store_34",
+      "name": "Funbox 南港LaLaport",
+      "brand": "funbox",
+      "region": "north",
+      "city": "台北市",
+      "fb_url": "http://www.facebook.com/share/14jPaVWXoLJ/?mibextid=wwXlfr",
+      "line_id": "@924ngwfb",
+      "enabled": true
+    },
+    {
+      "store_id": "store_35",
+      "name": "Funbox 遠東大巨蛋",
+      "brand": "funbox",
+      "region": "north",
+      "city": "台北市",
+      "fb_url": "https://reurl.cc/MW3NdL",
+      "line_id": "@248eexma",
+      "enabled": true
+    },
+    {
+      "store_id": "store_36",
+      "name": "Funbox 台中中友",
+      "brand": "funbox",
+      "region": "central",
+      "city": "台中市",
+      "fb_url": "https://www.facebook.com/p/Funbox-%E5%8F%B0%E4%B8%AD%E4%B8%AD%E5%8F%8B-100063893358626/",
+      "line_id": "@815dstuy",
+      "enabled": true
+    },
+    {
+      "store_id": "store_37",
+      "name": "Funbox 豐原太平洋",
+      "brand": "funbox",
+      "region": "central",
+      "city": "台中市",
+      "fb_url": "https://www.facebook.com/profile.php?id=61592589610506",
+      "line_id": "@094mvrhb",
+      "enabled": true
+    },
+    {
+      "store_id": "store_38",
+      "name": "Funbox 台中遠東",
+      "brand": "funbox",
+      "region": "central",
+      "city": "台中市",
+      "fb_url": "https://www.facebook.com/share/1EZCDU6tF1/?mibextid=wwXIfr",
+      "line_id": "@147vfxjr",
+      "enabled": true
+    },
+    {
+      "store_id": "store_39",
+      "name": "Funbox 廣三SOGO",
+      "brand": "funbox",
+      "region": "central",
+      "city": "台中市",
+      "fb_url": "https://www.facebook.com/share/1JaCvYo7ao/",
+      "line_id": "@526bsjmb",
+      "enabled": true
+    },
+    {
+      "store_id": "store_40",
+      "name": "Funbox 台中三越",
+      "brand": "funbox",
+      "region": "central",
+      "city": "台中市",
+      "fb_url": "https://www.facebook.com/profile.php?id=61591770278850&locale=zh_TW",
+      "line_id": "@833rhkmr",
+      "enabled": true
+    },
+    {
+      "store_id": "store_41",
+      "name": "Funbox 嘉義遠東",
+      "brand": "funbox",
+      "region": "central",
+      "city": "嘉義縣市",
+      "fb_url": "https://www.facebook.com/profile.php?id=61592768918548",
+      "line_id": "@gno1826d",
+      "enabled": true
+    },
+    {
+      "store_id": "store_42",
+      "name": "Funbox 嘉義耐斯",
+      "brand": "funbox",
+      "region": "central",
+      "city": "嘉義縣市",
+      "fb_url": "https://www.facebook.com/profile.php?id=61591841012874",
+      "line_id": "@121vsdww",
+      "enabled": true
+    },
+    {
+      "store_id": "store_43",
+      "name": "Funbox 嘉義三越",
+      "brand": "funbox",
+      "region": "central",
+      "city": "嘉義縣市",
+      "fb_url": "https://www.facebook.com/share/1ELX2AJ1ue/?mibextid=wwXIfr",
+      "line_id": "@zhj4962p",
+      "enabled": true
+    },
+    {
+      "store_id": "store_44",
+      "name": "Funbox 台中新時代",
+      "brand": "funbox",
+      "region": "central",
+      "city": "台中市",
+      "fb_url": "https://www.facebook.com/share/1J3PLMbDSN/?mibextid=wwXIfr",
+      "line_id": "@hdg3289a",
+      "enabled": true
+    },
+    {
+      "store_id": "store_45",
+      "name": "Funbox 文心秀泰",
+      "brand": "funbox",
+      "region": "central",
+      "city": "台中市",
+      "fb_url": "https://www.facebook.com/share/19F2BoUzUv/?mibextid=wwXIfr",
+      "line_id": "@605dilqq",
+      "enabled": true
+    },
+    {
+      "store_id": "store_46",
+      "name": "Funbox 麗寶一期",
+      "brand": "funbox",
+      "region": "central",
+      "city": "台中市",
+      "fb_url": "https://www.facebook.com/profile.php?id=61592814215979&locale=zh_TW",
+      "line_id": "@829adhop",
+      "enabled": true
+    },
+    {
+      "store_id": "store_47",
+      "name": "Funbox 台中港三井",
+      "brand": "funbox",
+      "region": "central",
+      "city": "台中市",
+      "fb_url": "https://www.facebook.com/share/1Jj8ybhtUR/?mibextid=wwXIfr",
+      "line_id": "@816xpruh",
+      "enabled": true
+    },
+    {
+      "store_id": "store_48",
+      "name": "Funbox 台中Lalaport",
+      "brand": "funbox",
+      "region": "central",
+      "city": "台中市",
+      "fb_url": "https://www.facebook.com/profile.php?id=61591544926718",
+      "line_id": "@620dfrfm",
+      "enabled": true
+    },
+    {
+      "store_id": "store_49",
+      "name": "Funbox 台中漢神洲際",
+      "brand": "funbox",
+      "region": "central",
+      "city": "台中市",
+      "fb_url": "https://www.facebook.com/profile.php?id=61592777043158",
+      "line_id": "@218xxrbx",
+      "enabled": true
+    },
+    {
+      "store_id": "store_50",
+      "name": "Funbox 高雄漢神",
+      "brand": "funbox",
+      "region": "south",
+      "city": "高雄市",
+      "fb_url": "https://www.facebook.com/share/1LrCbM7p9k/?mibextid=wwXIfr",
+      "line_id": "@897upgfr",
+      "enabled": true
+    },
+    {
+      "store_id": "store_51",
+      "name": "Funbox 崇光高雄",
+      "brand": "funbox",
+      "region": "south",
+      "city": "高雄市",
+      "fb_url": "https://www.facebook.com/share/19E7invurA/?mibextid=wwXIfr",
+      "line_id": "@845nallq",
+      "enabled": true
+    },
+    {
+      "store_id": "store_52",
+      "name": "Funbox 屏東太平洋",
+      "brand": "funbox",
+      "region": "south",
+      "city": "屏東縣",
+      "fb_url": "https://www.facebook.com/share/1bsqHbH5yg/?mibextid=wwXIfr",
+      "line_id": "@ess7711t",
+      "enabled": true
+    },
+    {
+      "store_id": "store_53",
+      "name": "Funbox 台南遠百",
+      "brand": "funbox",
+      "region": "south",
+      "city": "台南市",
+      "fb_url": "https://www.facebook.com/share/19JiPRLTe3/?mibextid=wwXIfr",
+      "line_id": "@373rxyat",
+      "enabled": true
+    },
+    {
+      "store_id": "store_54",
+      "name": "Funbox 高雄大遠百",
+      "brand": "funbox",
+      "region": "south",
+      "city": "高雄市",
+      "fb_url": "https://www.facebook.com/share/1Asnih4jRc/?mibextid=wwXIfr",
+      "line_id": "@204edsnm",
+      "enabled": true
+    },
+    {
+      "store_id": "store_55",
+      "name": "Funbox 台南西門",
+      "brand": "funbox",
+      "region": "south",
+      "city": "台南市",
+      "fb_url": "https://www.facebook.com/share/1EgGWhL2my/?mibextid=wwXIfr",
+      "line_id": "@344rybaf",
+      "enabled": true
+    },
+    {
+      "store_id": "store_56",
+      "name": "Funbox 漢神巨蛋",
+      "brand": "funbox",
+      "region": "south",
+      "city": "高雄市",
+      "fb_url": "https://www.facebook.com/share/1JMvwfTqpu/?mibextid=wwXIfr",
+      "line_id": "@ldh6278d",
+      "enabled": true
+    },
+    {
+      "store_id": "store_57",
+      "name": "Funbox 高雄左營",
+      "brand": "funbox",
+      "region": "south",
+      "city": "高雄市",
+      "fb_url": "https://www.facebook.com/100057115973730/",
+      "line_id": "@obz8096L",
+      "enabled": true
+    },
+    {
+      "store_id": "dream_mall_2",
+      "name": "Funbox 夢時代二館",
+      "brand": "funbox",
+      "region": "south",
+      "city": "高雄市",
+      "fb_url": "https://www.facebook.com/share/1iiWSKHcvP/?mibextid=wwXIfr",
+      "line_id": "@ott3541o",
+      "enabled": true
+    },
+    {
+      "store_id": "store_58",
+      "name": "Funbox 屏東環球",
+      "brand": "funbox",
+      "region": "south",
+      "city": "屏東縣",
+      "fb_url": "https://m.facebook.com/profile.php?id=61591804545442",
+      "line_id": "@xhi2668e",
+      "enabled": true
+    },
+    {
+      "store_id": "store_59",
+      "name": "Funbox 南紡購物中心",
+      "brand": "funbox",
+      "region": "north",
+      "city": "其他",
+      "fb_url": "https://www.facebook.com/profile.php?id=100057043616291&mibextid=wwXIfr&mibextid=wwXIfr",
+      "line_id": "@msq0107x",
+      "enabled": true
+    },
+    {
+      "store_id": "store_60",
+      "name": "Funbox 澎坊商場",
+      "brand": "funbox",
+      "region": "islands",
+      "city": "澎湖縣",
+      "fb_url": "https://www.facebook.com/share/1G6GUr5oYt/?mibextid=wwXIfr",
+      "line_id": "@185ybuaz",
+      "enabled": true
+    },
+    {
+      "store_id": "store_61",
+      "name": "Funbox 高雄大立",
+      "brand": "funbox",
+      "region": "south",
+      "city": "高雄市",
+      "fb_url": "https://www.facebook.com/share/1CLmgDDbFw/",
+      "line_id": "@917hatdy",
+      "enabled": true
+    },
+    {
+      "store_id": "store_62",
+      "name": "Funbox 義大二館",
+      "brand": "funbox",
+      "region": "south",
+      "city": "高雄市",
+      "fb_url": "https://www.facebook.com/share/1BwVM2Q3UP",
+      "line_id": "@bxd6822t",
+      "enabled": true
+    },
+    {
+      "store_id": "store_63",
+      "name": "Funbox 義享天地",
+      "brand": "funbox",
+      "region": "south",
+      "city": "高雄市",
+      "fb_url": "https://www.facebook.com/share/1EGnZY5Wad/",
+      "line_id": "@777nkbeo",
+      "enabled": true
+    },
+    {
+      "store_id": "store_64",
+      "name": "Funbox 大魯閣新光",
+      "brand": "funbox",
+      "region": "south",
+      "city": "高雄市",
+      "fb_url": "https://www.facebook.com/share/1EhNbSScWd/",
+      "line_id": "@fko7562c",
+      "enabled": true
+    },
+    {
+      "store_id": "store_65",
+      "name": "Funbox 台南三井",
+      "brand": "funbox",
+      "region": "south",
+      "city": "台南市",
+      "fb_url": "https://www.facebook.com/share/1981qXi5wG/",
+      "line_id": "@212isujx",
+      "enabled": true
+    },
+    {
+      "store_id": "store_66",
+      "name": "Funbox 花蓮遠東",
+      "brand": "funbox",
+      "region": "east",
+      "city": "花蓮縣",
+      "fb_url": "https://www.facebook.com/share/1Bq2zmw7FK/?mibextid=wwXIfr",
+      "line_id": "@ymc0892z",
+      "enabled": true
+    },
+    {
+      "store_id": "store_67",
+      "name": "Funbox 台東秀泰",
+      "brand": "funbox",
+      "region": "east",
+      "city": "台東縣",
+      "fb_url": "https://www.facebook.com/share/1BTxAEJsEC/?mibextid=wwXIfr",
+      "line_id": "@438glrqv",
+      "enabled": true
+    }
+  ],
+  "stats": {
+    "total_stores": 73,
+    "monitored_stores": 71,
+    "active_events_count": 0,
+    "history_count": 1
+  }
+}
