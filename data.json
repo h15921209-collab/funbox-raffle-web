@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-02 05:35:28",
+  "last_updated": "2026-10-02 05:41:15",
   "preferences": {
     "cities": [
       "高雄市",
@@ -32,7 +32,7 @@
       "publish_dt": "2026-10-01T10:19:05"
     },
     {
-      "post_id": "store_50_2148214369695778076",
+      "post_id": "store_50_3305784154357070305",
       "brand": "funbox",
       "store_id": "store_50",
       "store_name": "Funbox 高雄漢神",
@@ -106,7 +106,7 @@
       "publish_dt": "2026-10-01T10:15:39"
     },
     {
-      "post_id": "store_51_822422954840093985",
+      "post_id": "store_51_1937519583337906442",
       "brand": "funbox",
       "store_id": "store_51",
       "store_name": "Funbox 崇光高雄",
@@ -215,7 +215,7 @@
       "publish_dt": "2026-10-01T09:03:20"
     },
     {
-      "post_id": "store_52_3264132658707768908",
+      "post_id": "store_52_9093031763714973727",
       "brand": "funbox",
       "store_id": "store_52",
       "store_name": "Funbox 屏東太平洋",
@@ -271,7 +271,7 @@
       "publish_dt": "2026-10-01T12:43:00"
     },
     {
-      "post_id": "store_54_4210178132305904856",
+      "post_id": "store_54_8162137604364896079",
       "brand": "funbox",
       "store_id": "store_54",
       "store_name": "Funbox 高雄大遠百",
@@ -307,7 +307,7 @@
       "publish_dt": null
     },
     {
-      "post_id": "store_56_5645023834542558872",
+      "post_id": "store_56_9052105121726136899",
       "brand": "funbox",
       "store_id": "store_56",
       "store_name": "Funbox 漢神巨蛋",
@@ -357,7 +357,7 @@
       "publish_dt": null
     },
     {
-      "post_id": "store_57_5993762280707458082",
+      "post_id": "store_57_4439053155809153249",
       "brand": "funbox",
       "store_id": "store_57",
       "store_name": "Funbox 高雄左營",
@@ -438,91 +438,6 @@
       "publish_dt": null
     },
     {
-      "post_id": "dream_mall_2_4579206807396407250",
-      "brand": "funbox",
-      "store_id": "dream_mall_2",
-      "store_name": "Funbox 夢時代二館",
-      "city": "高雄市",
-      "region": "south",
-      "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
-      "period": "依貼文公告時限",
-      "status": "ACTIVE",
-      "status_display": "[登記進行中] (距截止剩餘 5 小時)",
-      "pickup_address": "請參閱原貼文門市說明",
-      "line_account": "@ott3541o",
-      "line_url": "https://line.me/R/ti/p/@ott3541o",
-      "fb_url": "https://www.facebook.com/share/1iiWSKHcvP/?mibextid=wwXIfr",
-      "direct_links": [
-        "https://lin.ee/VPnvzfD",
-        "https://lin.ee/w18JPfL",
-        "https://lin.ee/pt27cXy",
-        "https://lin.ee/7lICqR95",
-        "https://lin.ee/5v9i7JX",
-        "https://lin.ee/9iyP7hd",
-        "https://lin.ee/z5Xylyn",
-        "https://lin.ee/O4INC6k",
-        "https://lin.ee/7KuJ092q",
-        "https://lin.ee/S2j6XBI",
-        "https://lin.ee/Nf1c28M",
-        "https://lin.ee/S9t43wUu",
-        "https://lin.ee/qwqN6An",
-        "https://lin.ee/XkNUyZY",
-        "https://lin.ee/99VGCpDG",
-        "https://lin.ee/NWUaiSq",
-        "https://lin.ee/qw5zEmz",
-        "https://lin.ee/SR9H1ae"
-      ],
-      "items_with_links": [
-        {
-          "name": "隨機強化組295元",
-          "url": "https://lin.ee/VPnvzfD"
-        }
-      ],
-      "start_dt": null,
-      "end_dt": "2026-10-02T11:00:00",
-      "publish_dt": null
-    },
-    {
-      "post_id": "store_58_1417268834263333299",
-      "brand": "funbox",
-      "store_id": "store_58",
-      "store_name": "Funbox 屏東環球",
-      "city": "屏東縣",
-      "region": "south",
-      "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
-      "period": "依貼文公告時限",
-      "status": "UPCOMING",
-      "status_display": "[即將開放] 預計於 10/02 11:00 開放登記",
-      "pickup_address": "請參閱原貼文門市說明",
-      "line_account": "@xhi2668e",
-      "line_url": "https://line.me/R/ti/p/@xhi2668e",
-      "fb_url": "https://m.facebook.com/profile.php?id=61591804545442",
-      "direct_links": [
-        "https://lin.ee/SopDpNe",
-        "https://lin.ee/8FYXApf",
-        "https://lin.ee/pbfJGy5",
-        "https://lin.ee/94ynBej",
-        "https://lin.ee/5hlcoPH",
-        "https://lin.ee/5osSxsY",
-        "https://lin.ee/7kA2m3E",
-        "https://lin.ee/ze2DDbh",
-        "https://lin.ee/PWncdlj",
-        "https://lin.ee/yCxT81S",
-        "https://lin.ee/5Hvw9nU",
-        "https://lin.ee/tCbw6sM",
-        "https://lin.ee/NqRo4Gb",
-        "https://lin.ee/YHpq2El",
-        "https://lin.ee/thV3g0f",
-        "https://lin.ee/YGsk2ic",
-        "https://lin.ee/sFzUTJF",
-        "https://lin.ee/SIkm12B"
-      ],
-      "items_with_links": [],
-      "start_dt": "2026-10-02T11:00:00",
-      "end_dt": "2026-10-03T21:00:00",
-      "publish_dt": null
-    },
-    {
       "post_id": "61591920780307",
       "brand": "funbox",
       "store_id": "store_61",
@@ -544,7 +459,7 @@
       "publish_dt": "2026-10-02T03:18:13"
     },
     {
-      "post_id": "store_61_5408729627249470622",
+      "post_id": "store_61_6549556694980382725",
       "brand": "funbox",
       "store_id": "store_61",
       "store_name": "Funbox 高雄大立",
@@ -1336,7 +1251,7 @@
   "stats": {
     "total_stores": 73,
     "monitored_stores": 71,
-    "active_events_count": 14,
+    "active_events_count": 12,
     "history_count": 1
   }
 }
