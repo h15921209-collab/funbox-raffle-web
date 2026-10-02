@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-02 10:40:40",
+  "last_updated": "2026-10-02 16:23:18",
   "preferences": {
     "cities": [
       "高雄市",
@@ -33,59 +33,6 @@
       "publish_dt": "2026-10-01T10:19:05"
     },
     {
-      "post_id": "store_50_7307559050594603629",
-      "brand": "funbox",
-      "store_id": "store_50",
-      "store_name": "Funbox 高雄漢神",
-      "city": "高雄市",
-      "region": "south",
-      "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
-      "period": "依貼文公告時限",
-      "status": "ACTIVE",
-      "status_display": "[登記進行中] (距截止剩餘 1 小時)",
-      "pickup_address": "高雄市成功路上的漢神百貨7樓",
-      "line_account": "@897upgfr",
-      "line_url": "https://line.me/R/ti/p/@897upgfr",
-      "fb_url": "https://www.facebook.com/share/1LrCbM7p9k/?mibextid=wwXIfr",
-      "direct_links": [
-        "https://lin.ee/SkGF7q5",
-        "https://lin.ee/tPlO8cy",
-        "https://lin.ee/YmXTEkX",
-        "https://lin.ee/PfHrwBW",
-        "https://lin.ee/rguasSx",
-        "https://lin.ee/W9t89r8r",
-        "https://lin.ee/9J4ZobS",
-        "https://lin.ee/oBPIiz5",
-        "https://lin.ee/yd44wrJ",
-        "https://lin.ee/Z0umGnt",
-        "https://lin.ee/qShVK9cm",
-        "https://lin.ee/wVSPZLiy",
-        "https://lin.ee/pHINLVm",
-        "https://lin.ee/sC9HyuFt",
-        "https://lin.ee/Vy38G1b",
-        "https://lin.ee/y5813kab",
-        "https://lin.ee/7mvhjNt",
-        "https://lin.ee/6sjRsFo",
-        "https://lin.ee/ROf4SNU",
-        "https://lin.ee/7ja2RAC",
-        "https://lin.ee/ok2YIEn",
-        "https://lin.ee/ybtnfyU"
-      ],
-      "items_with_links": [
-        {
-          "name": "福音戰士改造組",
-          "url": "https://lin.ee/SkGF7q5"
-        },
-        {
-          "name": "鮫鯊狂鱗改造組",
-          "url": "https://lin.ee/tPlO8cy"
-        }
-      ],
-      "start_dt": null,
-      "end_dt": "2026-10-02T11:00:00",
-      "publish_dt": null
-    },
-    {
       "post_id": "61592571262425",
       "brand": "funbox",
       "store_id": "store_51",
@@ -105,94 +52,6 @@
       "start_dt": null,
       "end_dt": null,
       "publish_dt": "2026-10-01T10:15:39"
-    },
-    {
-      "post_id": "store_51_976901198197102839",
-      "brand": "funbox",
-      "store_id": "store_51",
-      "store_name": "Funbox 崇光高雄",
-      "city": "高雄市",
-      "region": "south",
-      "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
-      "period": "依貼文公告時限",
-      "status": "ACTIVE",
-      "status_display": "[登記進行中] (距截止剩餘 1 小時)",
-      "pickup_address": "請參閱原貼文門市說明",
-      "line_account": "@845nallq",
-      "line_url": "https://line.me/R/ti/p/@845nallq",
-      "fb_url": "https://www.facebook.com/share/19E7invurA/?mibextid=wwXIfr",
-      "direct_links": [
-        "https://lin.ee/6ip8aSY",
-        "https://lin.ee/UAgXnQL",
-        "https://lin.ee/VzY8rVa",
-        "https://lin.ee/5XR0ClN",
-        "https://lin.ee/wm9lPYp",
-        "https://lin.ee/nQdM9j7",
-        "https://lin.ee/WLijQym",
-        "https://lin.ee/zbbQJO9",
-        "https://lin.ee/XCv2eN7",
-        "https://lin.ee/zF4P8Ob",
-        "https://lin.ee/rvzfygP",
-        "https://lin.ee/QwLnkFc",
-        "https://lin.ee/w2O9GGk"
-      ],
-      "items_with_links": [
-        {
-          "name": "新世紀福音戰士改造組",
-          "url": "https://lin.ee/6ip8aSY"
-        },
-        {
-          "name": "2.UX-03魔導神杖",
-          "url": "https://lin.ee/UAgXnQL"
-        },
-        {
-          "name": "3.UX-19子彈獅鷲H",
-          "url": "https://lin.ee/VzY8rVa"
-        },
-        {
-          "name": "4.CX-13龍王閃擊",
-          "url": "https://lin.ee/5XR0ClN"
-        },
-        {
-          "name": "5.UX-01蒼龍爆刃",
-          "url": "https://lin.ee/wm9lPYp"
-        },
-        {
-          "name": "6.CX-02魔導至尊",
-          "url": "https://lin.ee/nQdM9j7"
-        },
-        {
-          "name": "7.UX-17隕星龍騎士3-70J",
-          "url": "https://lin.ee/WLijQym"
-        },
-        {
-          "name": "隨機強化組Vol6",
-          "url": "https://lin.ee/zbbQJO9"
-        },
-        {
-          "name": "9.CX-08隨機強化組Vol7",
-          "url": "https://lin.ee/XCv2eN7"
-        },
-        {
-          "name": "10.UX-16時鐘幻象隨機強化組",
-          "url": "https://lin.ee/zF4P8Ob"
-        },
-        {
-          "name": "11.CX-15邪神狂怒",
-          "url": "https://lin.ee/rvzfygP"
-        },
-        {
-          "name": "12.UX-13魔像奇岩",
-          "url": "https://lin.ee/QwLnkFc"
-        },
-        {
-          "name": "13.CX-03英仙幽冥",
-          "url": "https://lin.ee/w2O9GGk"
-        }
-      ],
-      "start_dt": null,
-      "end_dt": "2026-10-02T11:00:00",
-      "publish_dt": null
     },
     {
       "post_id": "100063915188951",
@@ -216,7 +75,7 @@
       "publish_dt": "2026-10-01T09:03:20"
     },
     {
-      "post_id": "store_52_4869485741117910146",
+      "post_id": "store_52_2236724325039950717",
       "brand": "funbox",
       "store_id": "store_52",
       "store_name": "Funbox 屏東太平洋",
@@ -224,8 +83,8 @@
       "region": "south",
       "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
       "period": "依貼文公告時限",
-      "status": "UPCOMING",
-      "status_display": "[即將開放] 預計於 10/02 11:00 開放登記",
+      "status": "ACTIVE",
+      "status_display": "[登記進行中] (距截止剩餘 1 天)",
       "pickup_address": "請參閱原貼文門市說明",
       "line_account": "@ess7711t",
       "line_url": "https://line.me/R/ti/p/@ess7711t",
@@ -272,7 +131,7 @@
       "publish_dt": "2026-10-01T12:43:00"
     },
     {
-      "post_id": "store_54_4357154150764477672",
+      "post_id": "store_54_3993963904437733057",
       "brand": "funbox",
       "store_id": "store_54",
       "store_name": "Funbox 高雄大遠百",
@@ -280,8 +139,8 @@
       "region": "south",
       "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
       "period": "依貼文公告時限",
-      "status": "UPCOMING",
-      "status_display": "[即將開放] 預計於 10/02 11:00 開放登記",
+      "status": "ACTIVE",
+      "status_display": "[登記進行中] (距截止剩餘 1 天)",
       "pickup_address": "請參閱原貼文門市說明",
       "line_account": "@204edsnm",
       "line_url": "https://line.me/R/ti/p/@204edsnm",
@@ -308,57 +167,7 @@
       "publish_dt": null
     },
     {
-      "post_id": "store_56_2669762456691709457",
-      "brand": "funbox",
-      "store_id": "store_56",
-      "store_name": "Funbox 漢神巨蛋",
-      "city": "高雄市",
-      "region": "south",
-      "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
-      "period": "依貼文公告時限",
-      "status": "ACTIVE",
-      "status_display": "[登記進行中] (距截止剩餘 1 小時)",
-      "pickup_address": "請參閱原貼文門市說明",
-      "line_account": "@ldh6278d",
-      "line_url": "https://line.me/R/ti/p/@ldh6278d",
-      "fb_url": "https://www.facebook.com/share/1JMvwfTqpu/?mibextid=wwXIfr",
-      "direct_links": [
-        "https://lin.ee/YXrZDpo",
-        "https://lin.ee/rnm57wh",
-        "https://lin.ee/TgSFczP",
-        "https://lin.ee/S60kCY2",
-        "https://lin.ee/NVv2R7e",
-        "https://lin.ee/qYUyqrE",
-        "https://lin.ee/Xk5Qz9E",
-        "https://lin.ee/oRmJyli",
-        "https://lin.ee/5ZwaWPM",
-        "https://lin.ee/OWiW8el",
-        "https://lin.ee/n11HC60",
-        "https://lin.ee/ubQQDob",
-        "https://lin.ee/uMsbQe6",
-        "https://lin.ee/tS5b8eg",
-        "https://lin.ee/PiXif9z"
-      ],
-      "items_with_links": [
-        {
-          "name": "新世紀福音戰士改造組",
-          "url": "https://lin.ee/YXrZDpo"
-        },
-        {
-          "name": "極限衝擊對戰組C",
-          "url": "https://lin.ee/rnm57wh"
-        },
-        {
-          "name": "隨機強化組",
-          "url": "https://lin.ee/TgSFczP"
-        }
-      ],
-      "start_dt": null,
-      "end_dt": "2026-10-02T11:00:00",
-      "publish_dt": null
-    },
-    {
-      "post_id": "store_57_2742093082993722739",
+      "post_id": "store_57_2362442555821691876",
       "brand": "funbox",
       "store_id": "store_57",
       "store_name": "Funbox 高雄左營",
@@ -366,8 +175,8 @@
       "region": "south",
       "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
       "period": "依貼文公告時限",
-      "status": "UPCOMING",
-      "status_display": "[即將開放] 預計於 10/02 11:00 開放登記",
+      "status": "ACTIVE",
+      "status_display": "[登記進行中] (距截止剩餘 1 天)",
       "pickup_address": "請參閱原貼文門市說明",
       "line_account": "@obz8096L",
       "line_url": "https://line.me/R/ti/p/@obz8096L",
@@ -439,6 +248,46 @@
       "publish_dt": null
     },
     {
+      "post_id": "store_58_8700336732254245706",
+      "brand": "funbox",
+      "store_id": "store_58",
+      "store_name": "Funbox 屏東環球",
+      "city": "屏東縣",
+      "region": "south",
+      "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
+      "period": "依貼文公告時限",
+      "status": "ACTIVE",
+      "status_display": "[登記進行中] (距截止剩餘 1 天)",
+      "pickup_address": "請參閱原貼文門市說明",
+      "line_account": "@xhi2668e",
+      "line_url": "https://line.me/R/ti/p/@xhi2668e",
+      "fb_url": "https://m.facebook.com/profile.php?id=61591804545442",
+      "direct_links": [
+        "https://lin.ee/SopDpNe",
+        "https://lin.ee/8FYXApf",
+        "https://lin.ee/pbfJGy5",
+        "https://lin.ee/94ynBej",
+        "https://lin.ee/5hlcoPH",
+        "https://lin.ee/5osSxsY",
+        "https://lin.ee/7kA2m3E",
+        "https://lin.ee/ze2DDbh",
+        "https://lin.ee/PWncdlj",
+        "https://lin.ee/yCxT81S",
+        "https://lin.ee/5Hvw9nU",
+        "https://lin.ee/tCbw6sM",
+        "https://lin.ee/NqRo4Gb",
+        "https://lin.ee/YHpq2El",
+        "https://lin.ee/thV3g0f",
+        "https://lin.ee/YGsk2ic",
+        "https://lin.ee/sFzUTJF",
+        "https://lin.ee/SIkm12B"
+      ],
+      "items_with_links": [],
+      "start_dt": "2026-10-02T11:00:00",
+      "end_dt": "2026-10-03T21:00:00",
+      "publish_dt": null
+    },
+    {
       "post_id": "61591920780307",
       "brand": "funbox",
       "store_id": "store_61",
@@ -460,7 +309,7 @@
       "publish_dt": "2026-10-02T03:18:13"
     },
     {
-      "post_id": "store_61_4623060849569406220",
+      "post_id": "store_61_910125011064229490",
       "brand": "funbox",
       "store_id": "store_61",
       "store_name": "Funbox 高雄大立",
@@ -468,8 +317,8 @@
       "region": "south",
       "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
       "period": "依貼文公告時限",
-      "status": "UPCOMING",
-      "status_display": "[即將開放] 預計於 10/02 11:00 開放登記",
+      "status": "ACTIVE",
+      "status_display": "[登記進行中] (距截止剩餘 1 天)",
       "pickup_address": "請參閱原貼文門市說明",
       "line_account": "@917hatdy",
       "line_url": "https://line.me/R/ti/p/@917hatdy",
@@ -502,6 +351,159 @@
       ],
       "start_dt": "2026-10-02T11:00:00",
       "end_dt": "2026-10-03T20:30:00",
+      "publish_dt": null
+    },
+    {
+      "post_id": "store_62_3539438785191097064",
+      "brand": "funbox",
+      "store_id": "store_62",
+      "store_name": "Funbox 義大二館",
+      "city": "高雄市",
+      "region": "south",
+      "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
+      "period": "依貼文公告時限",
+      "status": "ACTIVE",
+      "status_display": "[登記進行中] (距截止剩餘 1 天)",
+      "pickup_address": "請參閱原貼文門市說明",
+      "line_account": "@bxd6822t",
+      "line_url": "https://line.me/R/ti/p/@bxd6822t",
+      "fb_url": "https://www.facebook.com/share/1BwVM2Q3UP",
+      "direct_links": [
+        "https://lin.ee/w7JVPiQ",
+        "https://lin.ee/XJKQBzo",
+        "https://lin.ee/NLTN8sX",
+        "https://lin.ee/9eYInTc",
+        "https://lin.ee/t4oZlHYb",
+        "https://lin.ee/nXrFbjt",
+        "https://lin.ee/RG7j8aK",
+        "https://lin.ee/WjXTmos",
+        "https://lin.ee/8CDBzNi",
+        "https://lin.ee/X0sWK5L",
+        "https://lin.ee/saOhAOe",
+        "https://lin.ee/X929Z7Y",
+        "https://lin.ee/VDiGM0c",
+        "https://lin.ee/YDUl22m",
+        "https://lin.ee/ZTJWbU4",
+        "https://lin.ee/SLilizX"
+      ],
+      "items_with_links": [
+        {
+          "name": "隨機強化組",
+          "url": "https://lin.ee/w7JVPiQ"
+        },
+        {
+          "name": "隨機強化組Vol.7",
+          "url": "https://lin.ee/XJKQBzo"
+        },
+        {
+          "name": "CX-15邪神狂怒",
+          "url": "https://lin.ee/NLTN8sX"
+        },
+        {
+          "name": "CX-16極限衝擊對戰組C",
+          "url": "https://lin.ee/9eYInTc"
+        },
+        {
+          "name": "CX-14騎士堡壘",
+          "url": "https://lin.ee/t4oZlHYb"
+        },
+        {
+          "name": "CX-13龍王閃擊",
+          "url": "https://lin.ee/nXrFbjt"
+        },
+        {
+          "name": "UX-14天蝎長矛",
+          "url": "https://lin.ee/RG7j8aK"
+        },
+        {
+          "name": "UX-19子彈獅鷲",
+          "url": "https://lin.ee/WjXTmos"
+        },
+        {
+          "name": "UX-03魔導神杖",
+          "url": "https://lin.ee/8CDBzNi"
+        },
+        {
+          "name": "新世紀福音戰士改造組",
+          "url": "https://lin.ee/X0sWK5L"
+        }
+      ],
+      "start_dt": "2026-10-02T11:00:00",
+      "end_dt": "2026-10-03T21:00:00",
+      "publish_dt": null
+    },
+    {
+      "post_id": "store_63_720275393179697081",
+      "brand": "funbox",
+      "store_id": "store_63",
+      "store_name": "Funbox 義享天地",
+      "city": "高雄市",
+      "region": "south",
+      "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
+      "period": "依貼文公告時限",
+      "status": "ACTIVE",
+      "status_display": "[登記進行中] (距截止剩餘 1 天)",
+      "pickup_address": "請參閱原貼文門市說明",
+      "line_account": "@777nkbeo",
+      "line_url": "https://line.me/R/ti/p/@777nkbeo",
+      "fb_url": "https://www.facebook.com/share/1EGnZY5Wad/",
+      "direct_links": [
+        "https://lin.ee/vbT3Rz5",
+        "https://lin.ee/xRShQSL",
+        "https://lin.ee/uribvIJl",
+        "https://lin.ee/6sgZUiO",
+        "https://lin.ee/OXsCTaM",
+        "https://lin.ee/RTSmBHO",
+        "https://lin.ee/rG8atIv",
+        "https://lin.ee/xGuwBY2",
+        "https://lin.ee/oGSy3gE",
+        "https://lin.ee/SeCNP57",
+        "https://lin.ee/oTW9ybT"
+      ],
+      "items_with_links": [
+        {
+          "name": "1.CX-02魔導至尊",
+          "url": "https://lin.ee/vbT3Rz5"
+        },
+        {
+          "name": "2.CX-13龍王閃擊",
+          "url": "https://lin.ee/xRShQSL"
+        },
+        {
+          "name": "3.CX-15邪神狂怒",
+          "url": "https://lin.ee/uribvIJl"
+        },
+        {
+          "name": "4.UX-13魔像奇岩",
+          "url": "https://lin.ee/6sgZUiO"
+        },
+        {
+          "name": "5.CX-03英仙幽冥",
+          "url": "https://lin.ee/OXsCTaM"
+        },
+        {
+          "name": "6.CX-05隨機強化組Vol.6",
+          "url": "https://lin.ee/RTSmBHO"
+        },
+        {
+          "name": "7.CX-08隨機強化組Vol.7",
+          "url": "https://lin.ee/rG8atIv"
+        },
+        {
+          "name": "8.UX-19子彈獅鷲H",
+          "url": "https://lin.ee/xGuwBY2"
+        },
+        {
+          "name": "9.CX-14騎士堡壘",
+          "url": "https://lin.ee/oGSy3gE"
+        },
+        {
+          "name": "隨機強化組",
+          "url": "https://lin.ee/SeCNP57"
+        }
+      ],
+      "start_dt": "2026-10-02T11:00:00",
+      "end_dt": "2026-10-03T21:00:00",
       "publish_dt": null
     }
   ],
