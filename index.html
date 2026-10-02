@@ -275,37 +275,45 @@
       <div class="flex items-center justify-between mb-4">
         <div class="flex items-center space-x-2.5">
           <div class="w-8 h-8 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center text-lg">⚙️</div>
-          <h3 class="text-base font-bold text-white">管理控制台設定</h3>
+          <h3 class="text-base font-bold text-white">系統監控狀態</h3>
         </div>
         <button onclick="closeSettingsModal()" class="text-slate-400 hover:text-white p-1">✕</button>
       </div>
 
       <div class="space-y-4 text-xs">
-        <div>
-          <label class="block text-slate-300 font-medium mb-1">GitHub Personal Access Token (PAT)</label>
-          <input type="password" id="input-github-token" placeholder="貼上個人管理 Token (選填)..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-white font-mono focus:outline-none focus:border-sky-500 transition">
-          <p class="text-[11px] text-slate-500 mt-1">安全保存在您個人的手機瀏覽器（localStorage），用於儲存生活圈與觸發雲端巡查。</p>
-        </div>
-
-        <div class="bg-slate-950/80 p-3 rounded-xl border border-slate-800/80 space-y-2">
+        <div class="bg-slate-950/80 p-3.5 rounded-xl border border-slate-800/80 space-y-2.5">
           <div class="flex justify-between text-slate-400">
-            <span>倉庫名稱：</span>
-            <span class="text-slate-200 font-mono">h15921209-collab/funbox-raffle-monitor</span>
+            <span>巡邏排程：</span>
+            <span class="text-slate-200 font-medium">每日 09:00~23:00 每 15 分鐘</span>
           </div>
           <div class="flex justify-between text-slate-400">
-            <span>連線狀態：</span>
-            <span id="txt-conn-status" class="text-emerald-400 font-medium">● 雲端流水線就緒</span>
+            <span>免金鑰模式：</span>
+            <span class="text-emerald-400 font-medium">● 雲端已啟用 (免填 APIKEY)</span>
+          </div>
+          <div class="flex justify-between text-slate-400">
+            <span>LINE 官方帳號：</span>
+            <span class="text-sky-400 font-medium">@156clxdm (全台陀螺抽選助手)</span>
           </div>
         </div>
 
-        <div class="pt-2 flex space-x-3">
-          <button onclick="saveSettingsToken()" class="flex-1 py-2.5 rounded-xl font-semibold bg-sky-500 hover:bg-sky-400 text-slate-950 transition active:scale-95">
-            儲存金鑰
+        <div class="pt-1 flex flex-col sm:flex-row gap-2">
+          <button onclick="triggerManualScan()" class="flex-1 py-2.5 rounded-xl font-bold bg-sky-500 hover:bg-sky-400 text-slate-950 transition active:scale-95 flex items-center justify-center space-x-1 shadow-md shadow-sky-500/20">
+            <span>⚡</span> <span>立即觸發雲端掃描</span>
           </button>
-          <button onclick="triggerManualScan()" class="px-4 py-2.5 rounded-xl font-semibold bg-slate-800 hover:bg-slate-700 text-sky-400 border border-slate-700 transition active:scale-95">
-            ⚡ 觸發雲端掃描
-          </button>
+          <a href="https://line.me/R/oaMessage/@156clxdm/?%E6%8E%83%E6%8F%8F" target="_blank" class="px-4 py-2.5 rounded-xl font-semibold bg-emerald-600 hover:bg-emerald-500 text-white transition active:scale-95 text-center flex items-center justify-center space-x-1 shadow-md shadow-emerald-600/20">
+            <span>📲</span> <span>LINE 一鍵巡查</span>
+          </a>
         </div>
+
+        <details class="text-[11px] text-slate-500 pt-1">
+          <summary class="cursor-pointer hover:text-slate-400">進階：自訂 GitHub Token (一般使用者無需填寫)</summary>
+          <div class="mt-2 space-y-2">
+            <input type="password" id="input-github-token" placeholder="自訂 GitHub PAT (選填)..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-white font-mono focus:outline-none focus:border-sky-500 transition text-xs">
+            <button onclick="saveSettingsToken()" class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white border border-slate-700 transition">
+              儲存自訂金鑰
+            </button>
+          </div>
+        </details>
       </div>
     </div>
   </div>
@@ -746,102 +754,72 @@
       showToast(`已選取【${cities.join('+')}】！請點擊右上角「儲存設定」按鈕生效。`, 'info');
     }
 
-    // 儲存設定至 GitHub 雲端倉庫
+    const GAS_PROXY_URL = 'https://script.google.com/macros/s/AKfycbz6JpvtuaqtizIHlA1yDDIXw4TG0UdgWlOjxdpi2GCj09UiDm767PhcnLT1p0MJXzop/exec';
+
+    // 儲存設定至 GitHub 雲端倉庫 (免金鑰)
     async function saveStoreSettingsToCloud() {
-      const token = localStorage.getItem('GITHUB_PAT') || '';
-      if (!token) {
-        openSettingsModal();
-        showToast('請先填寫 GitHub Token 以儲存設定', 'error');
-        return;
-      }
-
-      showToast('⏳ 正在同步更新生活圈設定至 GitHub...', 'info');
-
-      const owner = 'h15921209-collab';
-      const repo = 'funbox-raffle-monitor';
-      const filePath = 'user_preferences.json';
-      const url = `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`;
+      const cities = appData.preferences.cities || [];
+      const citiesStr = cities.join(',');
+      showToast('⏳ 正在同步更新生活圈設定至雲端...', 'info');
 
       try {
-        // 1. Get SHA
-        const getRes = await fetch(url, {
-          headers: {
-            'Authorization': `Bearer ${token}`,
-            'Accept': 'application/vnd.github+json'
-          }
-        });
-        let sha = '';
-        if (getRes.ok) {
-          const getJson = await getRes.json();
-          sha = getJson.sha;
-        }
-
-        // 2. Put Content
-        const newPref = {
-          cities: appData.preferences.cities,
-          keywords: [],
-          include_official_hq: true,
-          updated_at: new Date().toISOString()
-        };
-        const contentStr = JSON.stringify(newPref, null, 2);
-        const b64 = btoa(unescape(encodeURIComponent(contentStr)));
-
-        const putRes = await fetch(url, {
-          method: 'PUT',
-          headers: {
-            'Authorization': `Bearer ${token}`,
-            'Accept': 'application/vnd.github+json',
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-            message: `feat: update target cities to ${newPref.cities.join(', ')} via Web App`,
-            content: b64,
-            sha: sha || undefined
-          })
-        });
-
-        if (putRes.ok) {
-          showToast('✅ 成功更新生活圈設定！雲端巡檢已即時同步生效。', 'success');
-        } else {
-          showToast('❌ 儲存失敗，請檢查 Token 權限。', 'error');
-        }
+        // 1. 優先嘗試透過 GAS 雲端中繼儲存 (免輸入金鑰)
+        await fetch(`${GAS_PROXY_URL}?action=set_cities&cities=${encodeURIComponent(citiesStr)}`, { mode: 'no-cors' });
+        showToast(`✅ 成功更新生活圈【${cities.join('+') || '全台'}】！雲端巡檢已同步生效。`, 'success');
       } catch (err) {
+        // 2. 若本地有自訂 PAT 則嘗試 GitHub 直連作為備援
+        const token = localStorage.getItem('GITHUB_PAT') || '';
+        if (token) {
+          try {
+            const owner = 'h15921209-collab';
+            const repo = 'funbox-raffle-monitor';
+            const filePath = 'user_preferences.json';
+            const url = `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`;
+            const getRes = await fetch(url, { headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github+json' } });
+            let sha = getRes.ok ? (await getRes.json()).sha : undefined;
+            const newPref = { cities: cities, keywords: [], include_official_hq: true, updated_at: new Date().toISOString() };
+            const b64 = btoa(unescape(encodeURIComponent(JSON.stringify(newPref, null, 2))));
+            const putRes = await fetch(url, {
+              method: 'PUT',
+              headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github+json', 'Content-Type': 'application/json' },
+              body: JSON.stringify({ message: `feat: update cities to ${citiesStr}`, content: b64, sha: sha })
+            });
+            if (putRes.ok) {
+              showToast('✅ 成功更新生活圈設定！', 'success');
+              return;
+            }
+          } catch (e) {}
+        }
         showToast('❌ 網路異常，儲存失敗。', 'error');
       }
     }
 
-    // 立即觸發雲端掃描
+    // 立即觸發雲端掃描 (免金鑰)
     async function triggerManualScan() {
-      const token = localStorage.getItem('GITHUB_PAT') || '';
-      if (!token) {
-        openSettingsModal();
-        showToast('請先填寫 GitHub Token 以觸發雲端巡查', 'error');
-        return;
-      }
-
-      showToast('⚡ 正在呼叫 GitHub Actions 啟動全台即時掃描...', 'info');
-      const owner = 'h15921209-collab';
-      const repo = 'funbox-raffle-monitor';
-      const url = `https://api.github.com/repos/${owner}/${repo}/actions/workflows/monitor.yml/dispatches`;
+      showToast('⚡ 正在啟動全台即時巡查 (免金鑰)...', 'info');
 
       try {
-        const res = await fetch(url, {
-          method: 'POST',
-          headers: {
-            'Authorization': `Bearer ${token}`,
-            'Accept': 'application/vnd.github+json',
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({ ref: 'main' })
-        });
-
-        if (res.status === 204) {
-          showToast('🎉 GitHub Actions 雲端巡查已正式啟動！約 30 秒後完成。', 'success');
-          setTimeout(() => fetchDashboardData(), 15000);
-        } else {
-          showToast('❌ 觸發失敗: HTTP ' + res.status, 'error');
-        }
+        // 1. 透過 GAS 雲端中繼觸發 (免金鑰)
+        await fetch(`${GAS_PROXY_URL}?action=trigger_scan`, { mode: 'no-cors' });
+        showToast('🎉 雲端巡查已正式啟動！約 30~60 秒後完成，有新抽籤將同步推播至 LINE！', 'success');
+        setTimeout(() => fetchDashboardData(), 20000);
       } catch (e) {
+        // 2. 若本地有自訂 PAT 則作為備援
+        const token = localStorage.getItem('GITHUB_PAT') || '';
+        if (token) {
+          try {
+            const res = await fetch(`https://api.github.com/repos/h15921209-collab/funbox-raffle-monitor/actions/workflows/monitor.yml/dispatches`, {
+              method: 'POST',
+              headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github+json', 'Content-Type': 'application/json' },
+              body: JSON.stringify({ ref: 'main' })
+            });
+            if (res.status === 204) {
+              showToast('🎉 雲端巡查已正式啟動！', 'success');
+              setTimeout(() => fetchDashboardData(), 15000);
+              return;
+            }
+          } catch (err) {}
+        }
         showToast('❌ 觸發失敗，請確認網路連線。', 'error');
       }
     }
