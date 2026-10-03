@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-02 20:17:13",
+  "last_updated": "2026-10-03 00:06:32",
   "preferences": {
     "cities": [
       "高雄市",
@@ -11,27 +11,6 @@
     "updated_at": "2026-10-02T07:44:44.611Z"
   },
   "active_events": [
-    {
-      "post_id": "100033181436285",
-      "brand": "funbox",
-      "store_id": "store_50",
-      "store_name": "Funbox 高雄漢神",
-      "city": "高雄市",
-      "region": "south",
-      "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
-      "period": "依貼文公告時限",
-      "status": "ACTIVE",
-      "status_display": "[最新公告] 請留意貼文公布時限",
-      "pickup_address": "請參閱原貼文門市說明",
-      "line_account": "@897upgfr",
-      "line_url": "https://line.me/R/ti/p/@897upgfr",
-      "fb_url": "https://www.facebook.com/share/1LrCbM7p9k/?mibextid=wwXIfr",
-      "direct_links": [],
-      "items_with_links": [],
-      "start_dt": null,
-      "end_dt": null,
-      "publish_dt": "2026-10-01T10:19:05"
-    },
     {
       "post_id": "61592571262425",
       "brand": "funbox",
@@ -75,7 +54,7 @@
       "publish_dt": "2026-10-01T09:03:20"
     },
     {
-      "post_id": "store_52_1121514776894403542",
+      "post_id": "store_52_2364239435502352670",
       "brand": "funbox",
       "store_id": "store_52",
       "store_name": "Funbox 屏東太平洋",
@@ -84,7 +63,7 @@
       "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
       "period": "依貼文公告時限",
       "status": "ACTIVE",
-      "status_display": "[登記進行中] (距截止剩餘 24 小時)",
+      "status_display": "[登記進行中] (距截止剩餘 20 小時)",
       "pickup_address": "請參閱原貼文門市說明",
       "line_account": "@ess7711t",
       "line_url": "https://line.me/R/ti/p/@ess7711t",
@@ -131,7 +110,7 @@
       "publish_dt": "2026-10-01T12:43:00"
     },
     {
-      "post_id": "store_54_4878902293692913028",
+      "post_id": "store_54_8379254067205475401",
       "brand": "funbox",
       "store_id": "store_54",
       "store_name": "Funbox 高雄大遠百",
@@ -140,7 +119,7 @@
       "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
       "period": "依貼文公告時限",
       "status": "ACTIVE",
-      "status_display": "[登記進行中] (距截止剩餘 24 小時)",
+      "status_display": "[登記進行中] (距截止剩餘 20 小時)",
       "pickup_address": "請參閱原貼文門市說明",
       "line_account": "@204edsnm",
       "line_url": "https://line.me/R/ti/p/@204edsnm",
@@ -167,7 +146,7 @@
       "publish_dt": null
     },
     {
-      "post_id": "store_57_43257640723088624",
+      "post_id": "store_57_1187304303395046991",
       "brand": "funbox",
       "store_id": "store_57",
       "store_name": "Funbox 高雄左營",
@@ -176,7 +155,7 @@
       "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
       "period": "依貼文公告時限",
       "status": "ACTIVE",
-      "status_display": "[登記進行中] (距截止剩餘 24 小時)",
+      "status_display": "[登記進行中] (距截止剩餘 20 小時)",
       "pickup_address": "請參閱原貼文門市說明",
       "line_account": "@obz8096L",
       "line_url": "https://line.me/R/ti/p/@obz8096L",
@@ -248,46 +227,6 @@
       "publish_dt": null
     },
     {
-      "post_id": "store_58_4188128689951154511",
-      "brand": "funbox",
-      "store_id": "store_58",
-      "store_name": "Funbox 屏東環球",
-      "city": "屏東縣",
-      "region": "south",
-      "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
-      "period": "依貼文公告時限",
-      "status": "ACTIVE",
-      "status_display": "[登記進行中] (距截止剩餘 24 小時)",
-      "pickup_address": "請參閱原貼文門市說明",
-      "line_account": "@xhi2668e",
-      "line_url": "https://line.me/R/ti/p/@xhi2668e",
-      "fb_url": "https://m.facebook.com/profile.php?id=61591804545442",
-      "direct_links": [
-        "https://lin.ee/SopDpNe",
-        "https://lin.ee/8FYXApf",
-        "https://lin.ee/pbfJGy5",
-        "https://lin.ee/94ynBej",
-        "https://lin.ee/5hlcoPH",
-        "https://lin.ee/5osSxsY",
-        "https://lin.ee/7kA2m3E",
-        "https://lin.ee/ze2DDbh",
-        "https://lin.ee/PWncdlj",
-        "https://lin.ee/yCxT81S",
-        "https://lin.ee/5Hvw9nU",
-        "https://lin.ee/tCbw6sM",
-        "https://lin.ee/NqRo4Gb",
-        "https://lin.ee/YHpq2El",
-        "https://lin.ee/thV3g0f",
-        "https://lin.ee/YGsk2ic",
-        "https://lin.ee/sFzUTJF",
-        "https://lin.ee/SIkm12B"
-      ],
-      "items_with_links": [],
-      "start_dt": "2026-10-02T11:00:00",
-      "end_dt": "2026-10-03T21:00:00",
-      "publish_dt": null
-    },
-    {
       "post_id": "61591920780307",
       "brand": "funbox",
       "store_id": "store_61",
@@ -309,7 +248,7 @@
       "publish_dt": "2026-10-02T03:18:13"
     },
     {
-      "post_id": "store_61_8495463410888210439",
+      "post_id": "store_61_4624433025483578767",
       "brand": "funbox",
       "store_id": "store_61",
       "store_name": "Funbox 高雄大立",
@@ -318,7 +257,7 @@
       "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
       "period": "依貼文公告時限",
       "status": "ACTIVE",
-      "status_display": "[登記進行中] (距截止剩餘 24 小時)",
+      "status_display": "[登記進行中] (距截止剩餘 20 小時)",
       "pickup_address": "請參閱原貼文門市說明",
       "line_account": "@917hatdy",
       "line_url": "https://line.me/R/ti/p/@917hatdy",
@@ -1101,7 +1040,7 @@
   "stats": {
     "total_stores": 73,
     "monitored_stores": 71,
-    "active_events_count": 10,
+    "active_events_count": 8,
     "history_count": 1
   }
 }
