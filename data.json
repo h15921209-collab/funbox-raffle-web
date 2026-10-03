@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-03 18:43:41",
+  "last_updated": "2026-10-03 18:57:22",
   "preferences": {
     "cities": [
       "高雄市",
@@ -12,7 +12,7 @@
   },
   "active_events": [
     {
-      "post_id": "store_52_5258443357153420810",
+      "post_id": "store_52_2405666181503895615",
       "brand": "funbox",
       "store_id": "store_52",
       "store_name": "Funbox 屏東太平洋",
@@ -47,7 +47,7 @@
       "publish_dt": null
     },
     {
-      "post_id": "store_54_1624313970784040767",
+      "post_id": "store_54_8551928410059569282",
       "brand": "funbox",
       "store_id": "store_54",
       "store_name": "Funbox 高雄大遠百",
@@ -83,7 +83,7 @@
       "publish_dt": null
     },
     {
-      "post_id": "store_57_921003123476031492",
+      "post_id": "store_57_5977865035632119117",
       "brand": "funbox",
       "store_id": "store_57",
       "store_name": "Funbox 高雄左營",
@@ -164,7 +164,7 @@
       "publish_dt": null
     },
     {
-      "post_id": "store_58_7647307140952715859",
+      "post_id": "store_58_3735045094949590161",
       "brand": "funbox",
       "store_id": "store_58",
       "store_name": "Funbox 屏東環球",
@@ -225,7 +225,7 @@
       "publish_dt": "2026-10-02T03:18:13"
     },
     {
-      "post_id": "store_61_4560030786374374670",
+      "post_id": "store_61_6287849682520990390",
       "brand": "funbox",
       "store_id": "store_61",
       "store_name": "Funbox 高雄大立",
@@ -270,7 +270,7 @@
       "publish_dt": null
     },
     {
-      "post_id": "store_62_8676948406200075958",
+      "post_id": "store_62_7059612284022391459",
       "brand": "funbox",
       "store_id": "store_62",
       "store_name": "Funbox 義大二館",
@@ -349,7 +349,7 @@
       "publish_dt": null
     },
     {
-      "post_id": "store_63_4555186238745935250",
+      "post_id": "store_63_1850523460657573372",
       "brand": "funbox",
       "store_id": "store_63",
       "store_name": "Funbox 義享天地",
