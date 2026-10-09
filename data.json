@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-09 19:38:06",
+  "last_updated": "2026-10-09 20:27:34",
   "preferences": {
     "cities": [
       "高雄市",
@@ -12,7 +12,7 @@
   },
   "active_events": [
     {
-      "post_id": "store_52_3177738774881338879",
+      "post_id": "store_52_5003119776643692205",
       "brand": "funbox",
       "store_id": "store_52",
       "store_name": "Funbox 屏東太平洋",
@@ -46,7 +46,7 @@
       "publish_dt": null
     },
     {
-      "post_id": "store_54_4133402040490416623",
+      "post_id": "store_54_446577796181968906",
       "brand": "funbox",
       "store_id": "store_54",
       "store_name": "Funbox 高雄大遠百",
@@ -81,7 +81,7 @@
       "publish_dt": null
     },
     {
-      "post_id": "store_57_6600678055630652062",
+      "post_id": "store_57_243744396174018648",
       "brand": "funbox",
       "store_id": "store_57",
       "store_name": "Funbox 高雄左營",
@@ -110,7 +110,41 @@
       "publish_dt": null
     },
     {
-      "post_id": "store_61_8176829361733631132",
+      "post_id": "store_58_653471620444056526",
+      "brand": "funbox",
+      "store_id": "store_58",
+      "store_name": "Funbox 屏東環球",
+      "city": "屏東縣",
+      "region": "south",
+      "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
+      "period": "依貼文公告時限",
+      "status": "ACTIVE",
+      "status_display": "[登記進行中] (距截止剩餘 1 小時)",
+      "pickup_address": "請參閱原貼文門市說明",
+      "line_account": "@xhi2668e",
+      "line_url": "https://line.me/R/ti/p/@xhi2668e",
+      "fb_url": "https://m.facebook.com/profile.php?id=61591804545442",
+      "direct_links": [
+        "https://lin.ee/PNRf4vm",
+        "https://lin.ee/wmbiZKnh",
+        "https://lin.ee/peeToJm",
+        "https://lin.ee/8xq86gz",
+        "https://lin.ee/SQ9uMkA9",
+        "https://lin.ee/V2N0J28",
+        "https://lin.ee/oAbXYSE",
+        "https://lin.ee/pxCNnJz",
+        "https://lin.ee/vHlw1VT",
+        "https://lin.ee/QUqQksF",
+        "https://lin.ee/V8s5jsU",
+        "https://lin.ee/PEBVrXT"
+      ],
+      "items_with_links": [],
+      "start_dt": "2026-10-08T11:00:00",
+      "end_dt": "2026-10-09T21:00:00",
+      "publish_dt": null
+    },
+    {
+      "post_id": "store_61_7990655668645987233",
       "brand": "funbox",
       "store_id": "store_61",
       "store_name": "Funbox 高雄大立",
@@ -138,6 +172,62 @@
       "items_with_links": [],
       "start_dt": "2026-10-08T11:00:00",
       "end_dt": "2026-10-09T20:30:00",
+      "publish_dt": null
+    },
+    {
+      "post_id": "store_62_2510120813498045324",
+      "brand": "funbox",
+      "store_id": "store_62",
+      "store_name": "Funbox 義大二館",
+      "city": "高雄市",
+      "region": "south",
+      "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
+      "period": "依貼文公告時限",
+      "status": "ACTIVE",
+      "status_display": "[登記進行中] (距截止剩餘 1 小時)",
+      "pickup_address": "請參閱原貼文門市說明",
+      "line_account": "@bxd6822t",
+      "line_url": "https://line.me/R/ti/p/@bxd6822t",
+      "fb_url": "https://www.facebook.com/share/1BwVM2Q3UP",
+      "direct_links": [
+        "https://lin.ee/7lWvEEg",
+        "https://lin.ee/RUAB6Aj",
+        "https://lin.ee/nVCMDl0",
+        "https://lin.ee/ZVBIN85",
+        "https://lin.ee/SY81zSf",
+        "https://lin.ee/SnTTAyI",
+        "https://lin.ee/sqR6knc",
+        "https://lin.ee/S6nmXz1g",
+        "https://lin.ee/VVpoJe6"
+      ],
+      "items_with_links": [
+        {
+          "name": "隨機強化組",
+          "url": "https://lin.ee/7lWvEEg"
+        },
+        {
+          "name": "隨機強化組Vol.7",
+          "url": "https://lin.ee/RUAB6Aj"
+        },
+        {
+          "name": "CX-15邪神狂怒",
+          "url": "https://lin.ee/nVCMDl0"
+        },
+        {
+          "name": "CX-14騎士堡壘",
+          "url": "https://lin.ee/ZVBIN85"
+        },
+        {
+          "name": "CX-13龍王閃擊",
+          "url": "https://lin.ee/SY81zSf"
+        },
+        {
+          "name": "UX-14天蝎長矛",
+          "url": "https://lin.ee/SnTTAyI"
+        }
+      ],
+      "start_dt": "2026-10-08T11:00:00",
+      "end_dt": "2026-10-09T21:00:00",
       "publish_dt": null
     }
   ],
@@ -888,7 +978,7 @@
   "stats": {
     "total_stores": 73,
     "monitored_stores": 71,
-    "active_events_count": 4,
+    "active_events_count": 6,
     "history_count": 1
   }
 }
