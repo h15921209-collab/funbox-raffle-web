@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-13 15:42:29",
+  "last_updated": "2026-11-13 21:40:48",
   "preferences": {
     "cities": [
       "高雄市"
@@ -11,46 +11,34 @@
   },
   "active_events": [
     {
-      "post_id": "100033181436285",
+      "post_id": "store_57_4830762129851000646",
       "brand": "funbox",
-      "store_id": "store_50",
-      "store_name": "Funbox 高雄漢神",
+      "store_id": "store_57",
+      "store_name": "Funbox 高雄左營",
       "city": "高雄市",
       "region": "south",
       "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
       "period": "依貼文公告時限",
       "status": "ACTIVE",
-      "status_display": "[最新公告] 請留意貼文公布時限",
+      "status_display": "[登記進行中] (距截止剩餘 23 小時)",
       "pickup_address": "請參閱原貼文門市說明",
-      "line_account": "@897upgfr",
-      "line_url": "https://line.me/R/ti/p/@897upgfr",
-      "fb_url": "https://www.facebook.com/share/1LrCbM7p9k/?mibextid=wwXIfr",
-      "direct_links": [],
-      "items_with_links": [],
-      "start_dt": null,
-      "end_dt": null,
-      "publish_dt": "2026-11-12T10:50:35"
-    },
-    {
-      "post_id": "100054441671873",
-      "brand": "funbox",
-      "store_id": "store_56",
-      "store_name": "Funbox 漢神巨蛋",
-      "city": "高雄市",
-      "region": "south",
-      "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
-      "period": "依貼文公告時限",
-      "status": "ACTIVE",
-      "status_display": "[最新公告] 請留意貼文公布時限",
-      "pickup_address": "請參閱原貼文門市說明",
-      "line_account": "@ldh6278d",
-      "line_url": "https://line.me/R/ti/p/@ldh6278d",
-      "fb_url": "https://www.facebook.com/share/1JMvwfTqpu/?mibextid=wwXIfr",
-      "direct_links": [],
-      "items_with_links": [],
-      "start_dt": null,
-      "end_dt": null,
-      "publish_dt": "2026-11-12T10:08:39"
+      "line_account": "@obz8096L",
+      "line_url": "https://line.me/R/ti/p/@obz8096L",
+      "fb_url": "https://www.facebook.com/100057115973730/",
+      "direct_links": [
+        "https://lin.ee/ND0KoMP",
+        "https://lin.ee/oGQMPuK",
+        "https://lin.ee/P1Dcx2h"
+      ],
+      "items_with_links": [
+        {
+          "name": "BX-09戰鬥陀螺X通行證",
+          "url": "https://lin.ee/ND0KoMP"
+        }
+      ],
+      "start_dt": "2026-11-13T11:00:00",
+      "end_dt": "2026-11-14T21:00:00",
+      "publish_dt": null
     },
     {
       "post_id": "61591920780307",
@@ -74,7 +62,7 @@
       "publish_dt": "2026-11-12T09:22:38"
     },
     {
-      "post_id": "store_61_868858448448169141",
+      "post_id": "store_61_5652346223242638622",
       "brand": "funbox",
       "store_id": "store_61",
       "store_name": "Funbox 高雄大立",
@@ -83,7 +71,7 @@
       "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
       "period": "依貼文公告時限",
       "status": "ACTIVE",
-      "status_display": "[登記進行中] (距截止剩餘 1 天)",
+      "status_display": "[登記進行中] (距截止剩餘 22 小時)",
       "pickup_address": "請參閱原貼文門市說明",
       "line_account": "@917hatdy",
       "line_url": "https://line.me/R/ti/p/@917hatdy",
@@ -109,7 +97,7 @@
       "publish_dt": null
     },
     {
-      "post_id": "store_62_1564201212961982426",
+      "post_id": "store_62_5211647813583981707",
       "brand": "funbox",
       "store_id": "store_62",
       "store_name": "Funbox 義大二館",
@@ -118,7 +106,7 @@
       "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
       "period": "依貼文公告時限",
       "status": "ACTIVE",
-      "status_display": "[登記進行中] (距截止剩餘 1 天)",
+      "status_display": "[登記進行中] (距截止剩餘 23 小時)",
       "pickup_address": "請參閱原貼文門市說明",
       "line_account": "@bxd6822t",
       "line_url": "https://line.me/R/ti/p/@bxd6822t",
@@ -163,6 +151,32 @@
       "start_dt": null,
       "end_dt": null,
       "publish_dt": "2026-11-12T12:00:08"
+    },
+    {
+      "post_id": "store_63_4051186756589839071",
+      "brand": "funbox",
+      "store_id": "store_63",
+      "store_name": "Funbox 義享天地",
+      "city": "高雄市",
+      "region": "south",
+      "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
+      "period": "依貼文公告時限",
+      "status": "ACTIVE",
+      "status_display": "[登記進行中] (距截止剩餘 23 小時)",
+      "pickup_address": "請參閱原貼文門市說明",
+      "line_account": "@777nkbeo",
+      "line_url": "https://line.me/R/ti/p/@777nkbeo",
+      "fb_url": "https://www.facebook.com/share/1EGnZY5Wad/",
+      "direct_links": [
+        "https://lin.ee/wahaKVq",
+        "https://lin.ee/PdcQqri",
+        "https://lin.ee/ZRAuQL4",
+        "https://lin.ee/oTW9ybT"
+      ],
+      "items_with_links": [],
+      "start_dt": "2026-11-13T11:00:00",
+      "end_dt": "2026-11-14T21:00:00",
+      "publish_dt": null
     }
   ],
   "history_events": [
