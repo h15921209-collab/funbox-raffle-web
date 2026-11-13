@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-13 07:38:49",
+  "last_updated": "2026-11-13 15:42:29",
   "preferences": {
     "cities": [
       "高雄市"
@@ -32,36 +32,6 @@
       "publish_dt": "2026-11-12T10:50:35"
     },
     {
-      "post_id": "store_50_6982180131113310112",
-      "brand": "funbox",
-      "store_id": "store_50",
-      "store_name": "Funbox 高雄漢神",
-      "city": "高雄市",
-      "region": "south",
-      "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
-      "period": "依貼文公告時限",
-      "status": "ACTIVE",
-      "status_display": "[登記進行中] (距截止剩餘 3 小時)",
-      "pickup_address": "高雄市成功路上的漢神百貨7樓",
-      "line_account": "@897upgfr",
-      "line_url": "https://line.me/R/ti/p/@897upgfr",
-      "fb_url": "https://www.facebook.com/share/1LrCbM7p9k/?mibextid=wwXIfr",
-      "direct_links": [
-        "https://lin.ee/pdXRfli",
-        "https://lin.ee/v6SzsMm",
-        "https://lin.ee/6QLkplb"
-      ],
-      "items_with_links": [
-        {
-          "name": "戰鬥陀螺X通行證",
-          "url": "https://lin.ee/pdXRfli"
-        }
-      ],
-      "start_dt": null,
-      "end_dt": "2026-11-13T11:00:00",
-      "publish_dt": null
-    },
-    {
       "post_id": "100054441671873",
       "brand": "funbox",
       "store_id": "store_56",
@@ -81,90 +51,6 @@
       "start_dt": null,
       "end_dt": null,
       "publish_dt": "2026-11-12T10:08:39"
-    },
-    {
-      "post_id": "store_56_1896542733041772090",
-      "brand": "funbox",
-      "store_id": "store_56",
-      "store_name": "Funbox 漢神巨蛋",
-      "city": "高雄市",
-      "region": "south",
-      "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
-      "period": "依貼文公告時限",
-      "status": "ACTIVE",
-      "status_display": "[登記進行中] (距截止剩餘 3 小時)",
-      "pickup_address": "請參閱原貼文門市說明",
-      "line_account": "@ldh6278d",
-      "line_url": "https://line.me/R/ti/p/@ldh6278d",
-      "fb_url": "https://www.facebook.com/share/1JMvwfTqpu/?mibextid=wwXIfr",
-      "direct_links": [
-        "https://lin.ee/Tqpl3Uzl",
-        "https://lin.ee/O8aPOOD"
-      ],
-      "items_with_links": [
-        {
-          "name": ".BX-56左迴旋風發射器（白紫）",
-          "url": "https://lin.ee/Tqpl3Uzl"
-        }
-      ],
-      "start_dt": null,
-      "end_dt": "2026-11-13T11:00:00",
-      "publish_dt": null
-    },
-    {
-      "post_id": "store_57_7327548367285134687",
-      "brand": "funbox",
-      "store_id": "store_57",
-      "store_name": "Funbox 高雄左營",
-      "city": "高雄市",
-      "region": "south",
-      "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
-      "period": "依貼文公告時限",
-      "status": "UPCOMING",
-      "status_display": "[即將開放] 預計於 11/13 11:00 開放登記",
-      "pickup_address": "請參閱原貼文門市說明",
-      "line_account": "@obz8096L",
-      "line_url": "https://line.me/R/ti/p/@obz8096L",
-      "fb_url": "https://www.facebook.com/100057115973730/",
-      "direct_links": [
-        "https://lin.ee/ND0KoMP",
-        "https://lin.ee/oGQMPuK",
-        "https://lin.ee/P1Dcx2h"
-      ],
-      "items_with_links": [
-        {
-          "name": "BX-09戰鬥陀螺X通行證",
-          "url": "https://lin.ee/ND0KoMP"
-        }
-      ],
-      "start_dt": "2026-11-13T11:00:00",
-      "end_dt": "2026-11-14T21:00:00",
-      "publish_dt": null
-    },
-    {
-      "post_id": "dream_mall_2_2661045243917753394",
-      "brand": "funbox",
-      "store_id": "dream_mall_2",
-      "store_name": "Funbox 夢時代二館",
-      "city": "高雄市",
-      "region": "south",
-      "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
-      "period": "依貼文公告時限",
-      "status": "ACTIVE",
-      "status_display": "[登記進行中] (距截止剩餘 3 小時)",
-      "pickup_address": "請參閱原貼文門市說明",
-      "line_account": "@ott3541o",
-      "line_url": "https://line.me/R/ti/p/@ott3541o",
-      "fb_url": "https://www.facebook.com/share/1iiWSKHcvP/?mibextid=wwXIfr",
-      "direct_links": [
-        "https://lin.ee/51dzcwO",
-        "https://lin.ee/Yaxo90T",
-        "https://lin.ee/Ur9k6Fy"
-      ],
-      "items_with_links": [],
-      "start_dt": null,
-      "end_dt": "2026-11-13T11:00:00",
-      "publish_dt": null
     },
     {
       "post_id": "61591920780307",
@@ -188,7 +74,7 @@
       "publish_dt": "2026-11-12T09:22:38"
     },
     {
-      "post_id": "store_61_6784715097086772634",
+      "post_id": "store_61_868858448448169141",
       "brand": "funbox",
       "store_id": "store_61",
       "store_name": "Funbox 高雄大立",
@@ -196,8 +82,8 @@
       "region": "south",
       "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
       "period": "依貼文公告時限",
-      "status": "UPCOMING",
-      "status_display": "[即將開放] 預計於 11/13 11:00 開放登記",
+      "status": "ACTIVE",
+      "status_display": "[登記進行中] (距截止剩餘 1 天)",
       "pickup_address": "請參閱原貼文門市說明",
       "line_account": "@917hatdy",
       "line_url": "https://line.me/R/ti/p/@917hatdy",
@@ -223,7 +109,7 @@
       "publish_dt": null
     },
     {
-      "post_id": "store_62_8505515374068775020",
+      "post_id": "store_62_1564201212961982426",
       "brand": "funbox",
       "store_id": "store_62",
       "store_name": "Funbox 義大二館",
@@ -231,8 +117,8 @@
       "region": "south",
       "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
       "period": "依貼文公告時限",
-      "status": "UPCOMING",
-      "status_display": "[即將開放] 預計於 11/13 11:00 開放登記",
+      "status": "ACTIVE",
+      "status_display": "[登記進行中] (距截止剩餘 1 天)",
       "pickup_address": "請參閱原貼文門市說明",
       "line_account": "@bxd6822t",
       "line_url": "https://line.me/R/ti/p/@bxd6822t",
@@ -277,27 +163,6 @@
       "start_dt": null,
       "end_dt": null,
       "publish_dt": "2026-11-12T12:00:08"
-    },
-    {
-      "post_id": "1572413848023733",
-      "brand": "funbox",
-      "store_id": "store_62",
-      "store_name": "Funbox 義大二館",
-      "city": "高雄市",
-      "region": "south",
-      "product_title": "戰鬥陀螺 (Beyblade X) 熱門商品限定抽選",
-      "period": "依貼文公告時限",
-      "status": "ACTIVE",
-      "status_display": "[登記進行中] (距截止剩餘 3 小時)",
-      "pickup_address": "請參閱原貼文門市說明",
-      "line_account": "@bxd6822t",
-      "line_url": "https://line.me/R/ti/p/@bxd6822t",
-      "fb_url": "https://www.facebook.com/share/1BwVM2Q3UP",
-      "direct_links": [],
-      "items_with_links": [],
-      "start_dt": null,
-      "end_dt": "2026-11-13T11:00:00",
-      "publish_dt": "2026-11-12T10:00:10"
     }
   ],
   "history_events": [
@@ -1047,7 +912,7 @@
   "stats": {
     "total_stores": 73,
     "monitored_stores": 71,
-    "active_events_count": 11,
+    "active_events_count": 6,
     "history_count": 1
   }
 }
